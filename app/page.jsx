@@ -1,3 +1,4 @@
+'use client'
 import ExperienceCard from "../components/ExperienceCard";
 import AnimatedName from "../components/AnimatedName";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
@@ -37,7 +38,6 @@ const experiences = [
     bulletPoints: [
       "Optimized application performance and reliability by utilizing Go, MongoDB, Redis, and unit testing as a Back-End Developer at Getir within the BiTaksi team.",
       "Collaborated with cross-functional teams to align backend development with front-end application requirements and corporate goals.",
-      "Improved website performance and SEO metrics",
       "Contributed updates in backend systems, leading to more robust and scalable solutions.",
     ],
   },

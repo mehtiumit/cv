@@ -1,27 +1,29 @@
 import '../styles/globals.css'
+import ClientLayout from '../components/ClientLayout'
 
 export const metadata = {
-  title: 'CV Sitesi',
-  description: 'Kişisel CV Sitesi',
+  title: 'Mehti Ümit Yıldırım',
+  description: 'My Personal Website',
+  keywords: 'web geliştirme, yazılım mühendisi, portfolio',
+  author: 'Mehti Ümit Yıldırım',
+  openGraph: {
+    title: 'Mehti Ümit Yıldırım',
+    description: 'My Personal Website',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  robots: 'index, follow'
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-      </head>
       <body suppressHydrationWarning>
-        <main style={{ 
-          maxWidth: '100vw', 
-          overflow: 'hidden',
-          backgroundColor: '#fff',
-          minHeight: '100vh',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          {children}
-        </main>
+        <ClientLayout>
+          <main className="main-container">
+            {children}
+          </main>
+        </ClientLayout>
       </body>
     </html>
   )

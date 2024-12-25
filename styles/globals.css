@@ -3,6 +3,13 @@
   --color-gray-dark: #333333;
   --color-gray-medium: #666666;
   --color-gray-light: #EEEEEE;
+  --background: white;
+  --text: black;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --text: white;
 }
 
 * {
@@ -15,6 +22,8 @@ body {
   font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .container {
@@ -26,6 +35,14 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.main-container {
+  max-width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 /* Diğer stil tanımlamaları buraya gelecek */ 
