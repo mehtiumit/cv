@@ -3,6 +3,7 @@
   padding: 1.5rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .experience-card:hover {
@@ -117,4 +118,31 @@
     opacity: 0.9;
     transform: translateY(0);
   }
+}
+
+.experience-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-gray-light);
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 24px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gray-dark);
+  border: 2px solid var(--background);
 } 
