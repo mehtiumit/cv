@@ -24,7 +24,7 @@ const StickyMenu = () => {
     title: 'Skills Summary',
     content: [
       'Backend: .NET Core, Golang',
-      'Databases: MongoDB, Redis, MySQL',
+      'Databases: MongoDB, Redis, SQL',
       'Search: Elasticsearch, OpenSearch',
       'Cloud & DevOps: Docker, Kubernetes, GCP',
       'Message Queue: Apache Kafka',

@@ -8,7 +8,7 @@ export const metadata = {
   author: 'Mehti Ümit Yıldırım',
   openGraph: {
     title: 'Mehti Ümit Yıldırım',
-    description: 'My Personal Website',
+    description: 'Mehti Ümit Yıldırım CV',
     type: 'website',
     locale: 'tr_TR',
   },
