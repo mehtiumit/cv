@@ -10,6 +10,7 @@ import SkillsCard from '../components/SkillsCard'
 import InfoButton from '../components/InfoButton'
 import styles from '../styles/Page.module.css'
 import StickyMenu from '../components/StickyMenu'
+import EducationCard from '../components/EducationCard'
 
 const experiences = [
   {
@@ -107,6 +108,11 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Education</h2>
+        <EducationCard />
+      </section>
 
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Work Experience</h2>
