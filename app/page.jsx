@@ -33,7 +33,7 @@ const experiences = [
         workType: "Remote",
         position: "Back-End Developer",
         startDate: "August 2023",
-        endDate: "Present",
+        endDate: "April 2025",
         bulletPoints: [
             "Developed key advertising products (Sponsored Products, Sponsored Brands, FacebookAds, HepsiAds Campaigns) using .NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB, and Google BigQuery.",
             "Collaborated with cross-functional teams including product management and QA to ensure timely delivery of high-quality software releases.",
