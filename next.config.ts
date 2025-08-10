@@ -1,5 +1,11 @@
 import type { NextConfig } from 'next'
 
+// Configure GitHub Pages basePath/assetPrefix only during Actions builds
+const isGithubActions = process.env.GITHUB_ACTIONS === 'true'
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')?.[1] ?? ''
+const computedBasePath = isGithubActions && repositoryName ? `/${repositoryName}` : undefined
+const computedAssetPrefix = computedBasePath ? `${computedBasePath}/` : undefined
+
 const nextConfig: NextConfig = {
   reactStrictMode: false,
   eslint: {
@@ -22,7 +28,15 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['react-icons'],
   },
+  // Enable static export for GitHub Pages
   output: 'export',
+  // Apply basePath and assetPrefix when building on GitHub Actions (project pages)
+  ...(computedBasePath
+    ? {
+        basePath: computedBasePath,
+        assetPrefix: computedAssetPrefix as string,
+      }
+    : {}),
 }
 
 export default nextConfig
