@@ -1,0 +1,398 @@
+{
+  "navigation": {
+    "home": "Homepage",
+    "projects": "Projects",
+    "backToHome": "← Homepage",
+    "ariaLabel": "Main navigation",
+    "returnToHome": "Return to home",
+    "projectsAriaLabel": "Projects"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Projects I developed on Web, Android and iOS platforms",
+    "viewProject": "View Project",
+    "github": "GitHub",
+    "completed": "Completed",
+    "featured": "Featured",
+    "loading": "Loading projects...",
+    "noProjectsFound": "No projects found",
+    "noProjectsInCategory": "no project found on selected category.",
+    "noActiveProjects": "There is no active project yet",
+    "skipToContent": "Skip to main content",
+    "filterHeading": "Project filters",
+    "projectsHeading": "projects",
+    "projectList": "Project List",
+    "showSelectedProjects": "show selected projects",
+    "filterApplied": "filter applied.",
+    "projectsShowing": "projects showing.",
+    "allProjects": "All projects",
+    "webProjects": "Web projects", 
+    "androidProjects": "Android projects",
+    "iosProjects": "iOS projects",
+    "platform": {
+      "all": "All",
+      "web": "Web",
+      "android": "Android",
+      "ios": "iOS"
+    },
+    "platformLabels": {
+      "web": "Web platform",
+      "android": "Android platform", 
+      "ios": "iOS platform"
+    },
+    "technologiesUsed": "Technologies used",
+    "projectLinks": "Project links",
+    "viewProjectInNewTab": "project in new tab",
+    "viewGithubInNewTab": "GitHub repository in new tab",
+    "projectCompletionDate": "Project completion date:",
+    "emptyFolderIcon": "Empty Folder Icon",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "comingSoonTitle": "Projects are being prepared",
+    "comingSoonDescription": "Real projects will be published here soon.",
+    "toggleInstruction": "This page has a code-level toggle (ENABLE_PROJECTS) to control visibility."
+  },
+  "projectDetails": {
+    "purpose": "Purpose",
+    "features": "Key Features",
+    "technologies": "Technologies Used"
+  },
+  "projectData": {
+    "web-1": {
+      "title": "E-Commerce Dashboard",
+      "description": "Modern and responsive e-commerce management panel. Includes real-time sales analytics, product management, and customer tracking system.",
+      "purpose": "Streamline e-commerce business operations with comprehensive analytics and management tools",
+      "features": [
+        "Real-time sales analytics and reporting",
+        "Product inventory management system",
+        "Customer tracking and behavior analysis",
+        "Interactive charts and data visualization",
+        "Responsive design for all devices"
+      ]
+    },
+    "web-2": {
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website. A modern CV site with dark/light theme support, animations, and responsive design.",
+      "purpose": "Showcase professional skills and projects with an engaging, modern web presence",
+      "features": [
+        "Dark and light theme toggle",
+        "Smooth animations and transitions",
+        "Fully responsive design",
+        "Project showcase with filtering",
+        "Contact form integration"
+      ]
+    },
+    "web-3": {
+      "title": "Task Management App",
+      "description": "Task management application developed for team collaboration. Features Kanban board, time tracking, and project analytics.",
+      "purpose": "Enhance team productivity through organized task management and collaboration tools",
+      "features": [
+        "Kanban board for visual task organization",
+        "Time tracking and productivity metrics",
+        "Real-time collaboration with team members",
+        "Project analytics and reporting",
+        "Task assignment and deadline management"
+      ]
+    },
+    "android-1": {
+      "title": "Fitness Tracker",
+      "description": "Comprehensive fitness application with daily activity tracking, exercise plans, and nutrition monitoring.",
+      "purpose": "Help users maintain a healthy lifestyle through comprehensive fitness tracking and guidance",
+      "features": [
+        "Daily activity and step tracking",
+        "Personalized exercise plans and workouts",
+        "Nutrition monitoring and calorie counting",
+        "Progress tracking with charts and statistics",
+        "Goal setting and achievement rewards"
+      ]
+    },
+    "android-2": {
+      "title": "Weather App",
+      "description": "Modern weather application featuring current weather information, 7-day forecasts, and interactive maps.",
+      "purpose": "Provide accurate and detailed weather information with intuitive visual presentation",
+      "features": [
+        "Current weather conditions and temperature",
+        "7-day detailed weather forecast",
+        "Interactive weather maps and radar",
+        "Location-based weather alerts",
+        "Hourly weather predictions"
+      ]
+    },
+    "android-3": {
+      "title": "Note Taking App",
+      "description": "Advanced note-taking application with Markdown support, category system, and cloud synchronization.",
+      "purpose": "Organize thoughts and information efficiently with advanced note-taking capabilities",
+      "features": [
+        "Markdown support for rich text formatting",
+        "Category and tag organization system",
+        "Cloud synchronization across devices",
+        "Search functionality within notes",
+        "Export notes in multiple formats"
+      ]
+    },
+    "ios-1": {
+      "title": "Budget Tracker",
+      "description": "Budget tracking application developed for personal finance management. Features expense categories, charts, and goal setting.",
+      "purpose": "Empower users to take control of their finances through detailed budget tracking and analysis",
+      "features": [
+        "Expense categorization and tracking",
+        "Visual charts and spending analytics",
+        "Budget goal setting and monitoring",
+        "Recurring transaction management",
+        "Financial insights and recommendations"
+      ]
+    },
+    "ios-2": {
+      "title": "Recipe Book",
+      "description": "Recipe application featuring recipe collection, shopping list creation, and nutritional value calculation.",
+      "purpose": "Simplify cooking and meal planning with organized recipes and smart shopping features",
+      "features": [
+        "Comprehensive recipe collection and search",
+        "Automatic shopping list generation",
+        "Nutritional value calculation and tracking",
+        "Step-by-step cooking instructions",
+        "Recipe sharing and favorites system"
+      ]
+    },
+    "ios-3": {
+      "title": "Meditation App",
+      "description": "Mindfulness application featuring daily meditation sessions, breathing exercises, and sleep stories.",
+      "purpose": "Promote mental wellness and mindfulness through guided meditation and relaxation techniques",
+      "features": [
+        "Daily guided meditation sessions",
+        "Breathing exercises and techniques",
+        "Sleep stories and relaxation sounds",
+        "Progress tracking and streaks",
+        "Personalized meditation recommendations"
+      ]
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "open": "Open",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "remove": "Remove",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "next": "Next",
+    "previous": "Previous",
+    "first": "First",
+    "last": "Last",
+    "aiGeneratedSummary": "This summary was generated by AI based on the information in my CV.",
+    "year": "year",
+    "month": "month",
+    "pluralSuffix": "s",
+    "infoButtonTooltip": "I created this site using Cursor and prompt engineering skills without any Next.js knowledge."
+  },
+  "accessibility": {
+    "skipLink": "Skip to main content",
+    "mainContent": "Main content",
+    "navigation": "Navigation",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "loading": "Loading",
+    "error": "Error occurred",
+    "success": "Success"
+  },
+  "content": {
+    "sectionTitles": {
+      "education": "Education",
+      "workExperience": "Work Experience",
+      "leadershipAndActivities": "Leadership and Activities",
+      "skillsAndInterests": "Skills & Interests"
+    },
+    "contact": {
+      "location": "Kepez, Antalya / Turkey",
+      "email": "mehtiumityildirim@gmail.com",
+      "phone": "+90 539 387 33 81",
+      "linkedin": "in/mehtiumityildirim"
+    },
+    "education": {
+      "akdeniz-university": {
+        "school": "Akdeniz University",
+        "location": "Antalya",
+        "degree": "Management Information Systems",
+        "description": "Bachelor's Degree",
+        "period": "2016 - 2020"
+      }
+    },
+    "experiences": {
+      "moka-united": {
+        "company": "Moka United",
+        "workType": "Remote",
+        "position": "Back-End Developer",
+        "startDate": "April 2025",
+        "endDate": "Present",
+        "bulletPoints": [
+          "Supported integration and maintenance of money transfer systems for multiple financial partners using Golang and MSSQL.",
+          "Contributed to the development of scalable microservices responsible for domestic and international fund transfers.",
+          "Collaborated with external partners to ensure seamless API communication and SLA compliance.",
+          "Utilized GitLab CI/CD pipelines to automate testing and deployment of mission-critical services.",
+          "Implemented secure authentication and role-based access control using Keycloak across internal APIs and dashboards.",
+          "Participated in daily stand-ups and sprint plannings, rapidly adapting to a fast-paced fintech environment."
+        ]
+      },
+      "hepsiburada": {
+        "company": "Hepsiburada",
+        "workType": "Remote",
+        "position": "Back-End Developer",
+        "startDate": "August 2023",
+        "endDate": "April 2025",
+        "bulletPoints": [
+          "Developed key advertising products (Sponsored Products, Sponsored Brands, FacebookAds, HepsiAds Campaigns) using .NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB, and Google BigQuery.",
+          "Collaborated with cross-functional teams including product management and QA to ensure timely delivery of high-quality software releases.",
+          "Developed and maintained microservices-based applications using Docker and Kubernetes for improved scalability and reliability.",
+          "Utilized Google BigQuery for data analytics and reporting, enabling data-driven decision making.",
+          "Configured and optimized Elasticsearch search engine to improve product search results and solve relevant product rotation in Sponsored Products.",
+          "Implemented Kafka messaging for real-time data processing and integration, improving system scalability.",
+          "Led migration from Elasticsearch to OpenSearch, optimizing search capabilities and data processing.",
+          "Implemented SOX compliance measures, ensuring adherence to financial and IT security standards."
+        ]
+      },
+      "getir": {
+        "company": "Getir",
+        "workType": "Hybrid",
+        "position": "Back-End Developer",
+        "startDate": "July 2023",
+        "endDate": "August 2023",
+        "bulletPoints": [
+          "Optimized application performance and reliability by utilizing Go, MongoDB, Redis, and unit testing as a Back-End Developer at Getir within the BiTaksi team.",
+          "Collaborated with cross-functional teams to align backend development with front-end application requirements and corporate goals.",
+          "Contributed updates in backend systems, leading to more robust and scalable solutions."
+        ]
+      },
+      "hepsiburada-tesodev": {
+        "company": "Hepsiburada via Tesodev",
+        "workType": "Remote",
+        "position": "Back-End Developer",
+        "startDate": "August 2021",
+        "endDate": "June 2023",
+        "bulletPoints": [
+          "Worked as a Back-End Developer for the Hepsiburada HepsiAds team, focusing on the development and optimization of Sponsored Products, Sponsored Brands, FacebookAds, and HepsiAds campaigns.",
+          "Utilized the same technology stack as in my subsequent internal role, including .NET Core, Golang,Kafka, Redis, Elasticsearch, MongoDB, and Google BigQuery.",
+          "Contributed to significant revenue growth through enhancements in advertising products, mirroring the achievements detailed in my internal position at Hepsiburada.",
+          "Collaborated closely with cross-functional teams to ensure the delivery of high-quality software releases, paralleling my later internal responsibilities.",
+          "Maintained and scaled microservices-based applications, consistent with the practices adopted during my internal tenure."
+        ]
+      }
+    },
+    "leadership": {
+      "gdg-antalya": {
+        "organization": "GDG Antalya / WTM Antalya",
+        "location": "Antalya",
+        "role": "Event Organizer",
+        "period": "September 2018 - February 2020",
+        "bulletPoints": [
+          "Coordinated and executed various events for GDG Antalya and Wtm Antalya, including speaker selection, logistics, and sponsorship agreements",
+          "Managed event budgets, ensuring expenses were kept within allocated limits and that financial reports were accurate and timely",
+          "Collaborated with cross-functional teams to plan and execute successful events, resulting in positive feedback from attendees and increased community engagement"
+        ]
+      }
+    },
+    "skills": {
+      "sections": {
+        "technical": "Technical",
+        "language": "Language",
+        "interests": "Interests"
+      },
+      "techStack": {
+        "dotnet": {
+          "name": ".NET Core",
+          "companies": ["Hepsiburada"]
+        },
+        "golang": {
+          "name": "Golang",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "kafka": {
+          "name": "Kafka",
+          "companies": ["Hepsiburada"]
+        },
+        "elasticsearch": {
+          "name": "Elasticsearch",
+          "companies": ["Hepsiburada"]
+        },
+        "docker": {
+          "name": "Docker",
+          "companies": ["Hepsiburada"]
+        },
+        "git": {
+          "name": "Git",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "sql": {
+          "name": "SQL",
+          "companies": ["Hepsiburada"]
+        },
+        "bigquery": {
+          "name": "BigQuery",
+          "companies": ["Hepsiburada"]
+        },
+        "redis": {
+          "name": "Redis",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "mongodb": {
+          "name": "MongoDB",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "prompt-engineering": {
+          "name": "Prompt Engineering",
+          "companies": ["Personal Projects", "Hepsiburada", "Getir"]
+        }
+      },
+      "languages": {
+        "english": {
+          "name": "English",
+          "level": "Upper Intermediate"
+        }
+      },
+      "interests": {
+        "debate": {
+          "name": "Debate"
+        },
+        "photography": {
+          "name": "Amateur Photography"
+        }
+      }
+    },
+    "summaries": {
+      "work": {
+        "title": "Work Experience Summary",
+        "button": "Work Experience Summary",
+        "items": [
+          "Over 3 years of experience in Back-End Development",
+          "Specialized in advertising technologies at Hepsiburada",
+          "Strong expertise in .NET Core, Golang, and microservices architecture",
+          "Experience with high-scale distributed systems",
+          "Proficient in data processing with Kafka and BigQuery",
+          "Skilled in search optimization with Elasticsearch/OpenSearch"
+        ]
+      },
+      "skills": {
+        "title": "Skills Summary",
+        "button": "Skills Summary",
+        "items": [
+          "Backend: .NET Core, Golang",
+          "Databases: MongoDB, Redis",
+          "Search: Elasticsearch, OpenSearch",
+          "Cloud & DevOps: Docker, Kubernetes, GCP",
+          "Message Queue: Apache Kafka",
+          "Analytics: Google BigQuery",
+          "Version Control: Git",
+          "Soft Skills: Team Collaboration, Problem Solving"
+        ]
+      }
+    }
+  }
+}

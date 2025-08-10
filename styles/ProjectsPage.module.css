@@ -1,0 +1,271 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 6rem 4rem 2rem; /* align side padding with homepage */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.subtitle {
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 1.1rem;
+  color: var(--menu-text-color);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.filterSection {
+  margin-bottom: 2rem;
+}
+
+.filterInline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.upcomingToggle {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  height: 40px;
+  color: var(--text);
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upcomingToggle[aria-pressed="true"] {
+  background: var(--text);
+  color: var(--background);
+  border-color: var(--text);
+}
+
+.upcomingToggle:hover {
+  background: var(--hover-background);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--card-hover-shadow);
+}
+
+.projectsSection {
+  /* ProjectsGrid component handles its own styling */
+}
+
+.comingSoon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.comingSoonCard {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  max-width: 720px;
+}
+
+.comingSoonTitle {
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.75rem 0;
+}
+
+.comingSoonDesc {
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 1rem;
+  color: var(--menu-text-color);
+  margin: 0;
+}
+
+/* Responsive design */
+/* Large desktop */
+@media (min-width: 1400px) {
+  .content {
+    width: 85%;
+    max-width: 1400px;
+    padding: 7rem 4rem 3rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+  }
+  
+  .header {
+    margin-bottom: 4rem;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+  .content {
+    width: 90%;
+    padding: 6.5rem 3rem 2.5rem;
+  }
+  
+  .title {
+    font-size: 2.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.15rem;
+  }
+  
+  .header {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/* Tablet landscape */
+@media (max-width: 1024px) {
+  .content {
+    padding: 6rem 3rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .subtitle {
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .content {
+    width: 95%;
+    padding: 5rem 2rem 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 640px) {
+  .content {
+    padding: 4.5rem 1.5rem 2rem;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .content {
+    width: 100%;
+    padding: 4rem 1.5rem 2rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .content {
+    padding: 3.5rem 0.75rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+    max-width: 280px;
+  }
+  
+  .header {
+    margin-bottom: 1.75rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .content {
+    padding: 3rem 1rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+  }
+}

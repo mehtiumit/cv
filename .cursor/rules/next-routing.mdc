@@ -1,0 +1,12 @@
+---
+globs: app/**
+description: Next.js App Router yönlendirme ve metadata kuralları
+---
+# Next.js Yönlendirme ve Metadata
+
+- **Rotalar**: Kök rota [app/page.tsx](mdc:app/page.tsx); alt rotalar dizin bazlıdır, örn. [app/projects/page.tsx](mdc:app/projects/page.tsx).
+- **Yerel Düzenler**: Segment bazlı düzenler için [app/projects/layout.tsx](mdc:app/projects/layout.tsx) kullanın.
+- **Metadata**: Robots ve site haritası [app/robots.ts](mdc:app/robots.ts), [app/sitemap.ts](mdc:app/sitemap.ts) altında yönetilir.
+- **İstemci/Sunucu**: Hook kullanan bileşenler için dosyanın başına `"use client"` ekleyin. Aksi halde sunucu bileşenlerini tercih edin.
+- **Yazı Tipleri**: `next/font` entegrasyonunu [app/fonts.js](mdc:app/fonts.js) üzerinden yönetin; harici font yükleyicilerden kaçının.
+

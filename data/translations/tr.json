@@ -1,0 +1,398 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "backToHome": "← Ana Sayfa",
+    "ariaLabel": "Ana navigasyon",
+    "returnToHome": "Ana sayfaya dön",
+    "projectsAriaLabel": "Projeler"
+  },
+  "projects": {
+    "title": "Projelerim",
+    "subtitle": "Web, Android ve iOS platformlarında geliştirdiğim projeler",
+    "viewProject": "Projeyi Görüntüle",
+    "github": "GitHub",
+    "completed": "Tamamlandı",
+    "featured": "Öne Çıkan",
+    "loading": "Projeler yükleniyor...",
+    "noProjectsFound": "Proje bulunamadı",
+    "noProjectsInCategory": "seçilen kategoride proje bulunamadı.",
+    "noActiveProjects": "Henüz aktif proje bulunmuyor",
+    "skipToContent": "Ana içeriğe geç",
+    "filterHeading": "Proje filtreleri",
+    "projectsHeading": "proje",
+    "projectList": "Proje Listesi",
+    "showSelectedProjects": "seçilen projeleri göster",
+    "filterApplied": "filtresi uygulandı.",
+    "projectsShowing": "proje gösteriliyor.",
+    "allProjects": "Tüm projeler",
+    "webProjects": "Web projeleri",
+    "androidProjects": "Android projeleri", 
+    "iosProjects": "iOS projeleri",
+    "platform": {
+      "all": "Tümü",
+      "web": "Web",
+      "android": "Android",
+      "ios": "iOS"
+    },
+    "platformLabels": {
+      "web": "Web platformu",
+      "android": "Android platformu",
+      "ios": "iOS platformu"
+    },
+    "technologiesUsed": "Kullanılan teknolojiler",
+    "projectLinks": "Proje bağlantıları",
+    "viewProjectInNewTab": "projesini yeni sekmede görüntüle",
+    "viewGithubInNewTab": "GitHub deposunu yeni sekmede görüntüle",
+    "projectCompletionDate": "Proje tamamlanma tarihi:",
+    "emptyFolderIcon": "Boş Klasör İkonu",
+    "showMore": "Devamını göster",
+    "showLess": "Daha az göster",
+    "comingSoonTitle": "Projeler hazırlanıyor",
+    "comingSoonDescription": "Burada yakında gerçek projeler yayınlanacak.",
+    "toggleInstruction": "Bu sayfada görünürlüğü kontrol eden kod seviyesinde bir anahtar (ENABLE_PROJECTS) bulunuyor."
+  },
+  "projectDetails": {
+    "purpose": "Amaç",
+    "features": "Temel Özellikler",
+    "technologies": "Kullanılan Teknolojiler"
+  },
+  "projectData": {
+    "web-1": {
+      "title": "E-Ticaret Yönetim Paneli",
+      "description": "Modern ve duyarlı e-ticaret yönetim paneli. Gerçek zamanlı satış analitiği, ürün yönetimi ve müşteri takip sistemi içerir.",
+      "purpose": "Kapsamlı analitik ve yönetim araçlarıyla e-ticaret iş operasyonlarını kolaylaştırmak",
+      "features": [
+        "Gerçek zamanlı satış analitiği ve raporlama",
+        "Ürün envanter yönetim sistemi",
+        "Müşteri takibi ve davranış analizi",
+        "İnteraktif grafikler ve veri görselleştirme",
+        "Tüm cihazlar için duyarlı tasarım"
+      ]
+    },
+    "web-2": {
+      "title": "Portföy Web Sitesi",
+      "description": "Kişisel portföy web sitesi. Koyu/açık tema desteği, animasyonlar ve duyarlı tasarıma sahip modern bir CV sitesi.",
+      "purpose": "Profesyonel becerileri ve projeleri etkileyici, modern bir web varlığıyla sergilemek",
+      "features": [
+        "Koyu ve açık tema geçişi",
+        "Akıcı animasyonlar ve geçişler",
+        "Tamamen duyarlı tasarım",
+        "Filtreleme ile proje vitrini",
+        "İletişim formu entegrasyonu"
+      ]
+    },
+    "web-3": {
+      "title": "Görev Yönetimi Uygulaması",
+      "description": "Takım işbirliği için geliştirilmiş görev yönetimi uygulaması. Kanban panosu, zaman takibi ve proje analitiği içerir.",
+      "purpose": "Organize görev yönetimi ve işbirliği araçlarıyla takım verimliliğini artırmak",
+      "features": [
+        "Görsel görev organizasyonu için Kanban panosu",
+        "Zaman takibi ve verimlilik metrikleri",
+        "Takım üyeleriyle gerçek zamanlı işbirliği",
+        "Proje analitiği ve raporlama",
+        "Görev atama ve son tarih yönetimi"
+      ]
+    },
+    "android-1": {
+      "title": "Fitness Takipçisi",
+      "description": "Günlük aktivite takibi, egzersiz planları ve beslenme izleme içeren kapsamlı fitness uygulaması.",
+      "purpose": "Kapsamlı fitness takibi ve rehberliği ile kullanıcıların sağlıklı yaşam tarzını sürdürmelerine yardımcı olmak",
+      "features": [
+        "Günlük aktivite ve adım takibi",
+        "Kişiselleştirilmiş egzersiz planları ve antrenmanlar",
+        "Beslenme izleme ve kalori sayımı",
+        "Grafikler ve istatistiklerle ilerleme takibi",
+        "Hedef belirleme ve başarı ödülleri"
+      ]
+    },
+    "android-2": {
+      "title": "Hava Durumu Uygulaması",
+      "description": "Güncel hava durumu bilgileri, 7 günlük tahminler ve interaktif haritalar içeren modern hava durumu uygulaması.",
+      "purpose": "Sezgisel görsel sunum ile doğru ve detaylı hava durumu bilgisi sağlamak",
+      "features": [
+        "Güncel hava durumu koşulları ve sıcaklık",
+        "7 günlük detaylı hava durumu tahmini",
+        "İnteraktif hava durumu haritaları ve radar",
+        "Konum tabanlı hava durumu uyarıları",
+        "Saatlik hava durumu tahminleri"
+      ]
+    },
+    "android-3": {
+      "title": "Not Alma Uygulaması",
+      "description": "Markdown desteği, kategori sistemi ve bulut senkronizasyonu içeren gelişmiş not alma uygulaması.",
+      "purpose": "Gelişmiş not alma yetenekleriyle düşünceleri ve bilgileri verimli şekilde organize etmek",
+      "features": [
+        "Zengin metin biçimlendirme için Markdown desteği",
+        "Kategori ve etiket organizasyon sistemi",
+        "Cihazlar arası bulut senkronizasyonu",
+        "Notlar içinde arama işlevselliği",
+        "Notları birden fazla formatta dışa aktarma"
+      ]
+    },
+    "ios-1": {
+      "title": "Bütçe Takipçisi",
+      "description": "Kişisel finans yönetimi için geliştirilmiş bütçe takip uygulaması. Harcama kategorileri, grafikler ve hedef belirleme içerir.",
+      "purpose": "Detaylı bütçe takibi ve analizi ile kullanıcıların finanslarını kontrol altına almalarını sağlamak",
+      "features": [
+        "Harcama kategorizasyonu ve takibi",
+        "Görsel grafikler ve harcama analitiği",
+        "Bütçe hedefi belirleme ve izleme",
+        "Tekrarlayan işlem yönetimi",
+        "Finansal içgörüler ve öneriler"
+      ]
+    },
+    "ios-2": {
+      "title": "Tarif Kitabı",
+      "description": "Tarif koleksiyonu, alışveriş listesi oluşturma ve besin değeri hesaplama içeren tarif uygulaması.",
+      "purpose": "Organize tarifler ve akıllı alışveriş özellikleriyle yemek pişirme ve yemek planlamasını basitleştirmek",
+      "features": [
+        "Kapsamlı tarif koleksiyonu ve arama",
+        "Otomatik alışveriş listesi oluşturma",
+        "Besin değeri hesaplama ve takibi",
+        "Adım adım pişirme talimatları",
+        "Tarif paylaşımı ve favoriler sistemi"
+      ]
+    },
+    "ios-3": {
+      "title": "Meditasyon Uygulaması",
+      "description": "Günlük meditasyon seansları, nefes egzersizleri ve uyku hikayeleri içeren farkındalık uygulaması.",
+      "purpose": "Rehberli meditasyon ve rahatlama teknikleri ile zihinsel sağlığı ve farkındalığı teşvik etmek",
+      "features": [
+        "Günlük rehberli meditasyon seansları",
+        "Nefes egzersizleri ve teknikleri",
+        "Uyku hikayeleri ve rahatlama sesleri",
+        "İlerleme takibi ve seriler",
+        "Kişiselleştirilmiş meditasyon önerileri"
+      ]
+    }
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "retry": "Tekrar Dene",
+    "close": "Kapat",
+    "open": "Aç",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "add": "Ekle",
+    "remove": "Kaldır",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "first": "İlk",
+    "last": "Son",
+    "aiGeneratedSummary": "Bu özet, CV'mdeki bilgilere dayanarak yapay zeka tarafından oluşturulmuştur.",
+    "year": "yıl",
+    "month": "ay",
+    "pluralSuffix": "",
+    "infoButtonTooltip": "Bu siteyi Next.js bilgim olmadan, Cursor ve prompt engineering becerilerimi kullanarak oluşturdum."
+  },
+  "accessibility": {
+    "skipLink": "Ana içeriğe geç",
+    "mainContent": "Ana içerik",
+    "navigation": "Navigasyon",
+    "menu": "Menü",
+    "closeMenu": "Menüyü kapat",
+    "openMenu": "Menüyü aç",
+    "loading": "Yükleniyor",
+    "error": "Hata oluştu",
+    "success": "Başarılı"
+  },
+  "content": {
+    "sectionTitles": {
+      "education": "Eğitim",
+      "workExperience": "İş Deneyimi",
+      "leadershipAndActivities": "Liderlik ve Aktiviteler",
+      "skillsAndInterests": "Beceriler ve İlgi Alanları"
+    },
+    "contact": {
+      "location": "Kepez, Antalya / Türkiye",
+      "email": "mehtiumityildirim@gmail.com",
+      "phone": "+90 539 387 33 81",
+      "linkedin": "in/mehtiumityildirim"
+    },
+    "education": {
+      "akdeniz-university": {
+        "school": "Akdeniz Üniversitesi",
+        "location": "Antalya",
+        "degree": "Yönetim Bilişim Sistemleri",
+        "description": "Lisans Derecesi",
+        "period": "2016 - 2020"
+      }
+    },
+    "experiences": {
+      "moka-united": {
+        "company": "Moka United",
+        "workType": "Uzaktan",
+        "position": "Back-End Geliştirici",
+        "startDate": "Nisan 2025",
+        "endDate": "Günümüz",
+        "bulletPoints": [
+          "Golang ve MSSQL kullanarak birden fazla finansal partner için para transfer sistemlerinin entegrasyonu ve bakımını destekledim.",
+          "Yurtiçi ve yurtdışı fon transferlerinden sorumlu ölçeklenebilir mikroservislerin geliştirilmesine katkıda bulundum.",
+          "Sorunsuz API iletişimi ve SLA uyumluluğunu sağlamak için harici partnerlerle işbirliği yaptım.",
+          "Kritik servislerin test ve dağıtım süreçlerini otomatikleştirmek için GitLab CI/CD pipeline'larını kullandım.",
+          "Keycloak kullanarak dahili API'ler ve paneller genelinde güvenli kimlik doğrulama ve rol tabanlı erişim kontrolü uyguladım.",
+          "Günlük stand-up'lara ve sprint planlamalarına katıldım, hızlı tempolu fintech ortamına hızla adapte oldum."
+        ]
+      },
+      "hepsiburada": {
+        "company": "Hepsiburada",
+        "workType": "Uzaktan",
+        "position": "Back-End Geliştirici",
+        "startDate": "Ağustos 2023",
+        "endDate": "Nisan 2025",
+        "bulletPoints": [
+          ".NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB ve Google BigQuery kullanarak temel reklam ürünlerini (Sponsored Products, Sponsored Brands, FacebookAds, HepsiAds Campaigns) geliştirdim.",
+          "Yüksek kaliteli yazılım sürümlerinin zamanında teslimini sağlamak için ürün yönetimi ve QA dahil olmak üzere çapraz fonksiyonel ekiplerle işbirliği yaptım.",
+          "Gelişmiş ölçeklenebilirlik ve güvenilirlik için Docker ve Kubernetes kullanarak mikroservis tabanlı uygulamalar geliştirdim ve sürdürdüm.",
+          "Veri analitiği ve raporlama için Google BigQuery kullandım, veri odaklı karar vermeyi mümkün kıldım.",
+          "Ürün arama sonuçlarını iyileştirmek ve Sponsored Products'ta ilgili ürün rotasyonunu çözmek için Elasticsearch arama motorunu yapılandırdım ve optimize ettim.",
+          "Gerçek zamanlı veri işleme ve entegrasyon için Kafka mesajlaşmasını uyguladım, sistem ölçeklenebilirliğini artırdım.",
+          "Elasticsearch'ten OpenSearch'e geçişi yönettim, arama yeteneklerini ve veri işlemeyi optimize ettim.",
+          "Finansal ve BT güvenlik standartlarına uyumu sağlayarak SOX uyumluluk önlemlerini uyguladım."
+        ]
+      },
+      "getir": {
+        "company": "Getir",
+        "workType": "Hibrit",
+        "position": "Back-End Geliştirici",
+        "startDate": "Temmuz 2023",
+        "endDate": "Ağustos 2023",
+        "bulletPoints": [
+          "BiTaksi ekibi içinde Getir'de Back-End Geliştirici olarak Go, MongoDB, Redis ve birim testleri kullanarak uygulama performansını ve güvenilirliğini optimize ettim.",
+          "Backend geliştirmeyi frontend uygulama gereksinimleri ve kurumsal hedeflerle uyumlu hale getirmek için çapraz fonksiyonel ekiplerle işbirliği yaptım.",
+          "Daha sağlam ve ölçeklenebilir çözümlere yol açan backend sistemlerinde güncellemelere katkıda bulundum."
+        ]
+      },
+      "hepsiburada-tesodev": {
+        "company": "Tesodev aracılığıyla Hepsiburada",
+        "workType": "Uzaktan",
+        "position": "Back-End Geliştirici",
+        "startDate": "Ağustos 2021",
+        "endDate": "Haziran 2023",
+        "bulletPoints": [
+          "Hepsiburada HepsiAds ekibi için Back-End Geliştirici olarak çalıştım, Sponsored Products, Sponsored Brands, FacebookAds ve HepsiAds kampanyalarının geliştirilmesi ve optimizasyonuna odaklandım.",
+          ".NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB ve Google BigQuery dahil olmak üzere sonraki dahili rolümdeki aynı teknoloji yığınını kullandım.",
+          "Hepsiburada'daki dahili pozisyonumda detaylandırılan başarıları yansıtarak, reklam ürünlerindeki geliştirmeler yoluyla önemli gelir artışına katkıda bulundum.",
+          "Yüksek kaliteli yazılım sürümlerinin teslimini sağlamak için çapraz fonksiyonel ekiplerle yakın işbirliği yaptım, sonraki dahili sorumluluklarımla paralel olarak.",
+          "Dahili görev sürem boyunca benimsenen uygulamalarla tutarlı olarak mikroservis tabanlı uygulamaları sürdürdüm ve ölçeklendirdim."
+        ]
+      }
+    },
+    "leadership": {
+      "gdg-antalya": {
+        "organization": "GDG Antalya / WTM Antalya",
+        "location": "Antalya",
+        "role": "Etkinlik Organizatörü",
+        "period": "Eylül 2018 - Şubat 2020",
+        "bulletPoints": [
+          "Konuşmacı seçimi, lojistik ve sponsorluk anlaşmaları dahil olmak üzere GDG Antalya ve WTM Antalya için çeşitli etkinlikleri koordine ettim ve yürüttüm",
+          "Etkinlik bütçelerini yönettim, harcamaların tahsis edilen limitler içinde tutulmasını ve finansal raporların doğru ve zamanında olmasını sağladım",
+          "Başarılı etkinlikleri planlamak ve yürütmek için çapraz fonksiyonel ekiplerle işbirliği yaptım, katılımcılardan olumlu geri bildirimler ve artan topluluk katılımı sağladım"
+        ]
+      }
+    },
+    "skills": {
+      "sections": {
+        "technical": "Teknik",
+        "language": "Dil",
+        "interests": "İlgi Alanları"
+      },
+      "techStack": {
+        "dotnet": {
+          "name": ".NET Core",
+          "companies": ["Hepsiburada"]
+        },
+        "golang": {
+          "name": "Golang",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "kafka": {
+          "name": "Kafka",
+          "companies": ["Hepsiburada"]
+        },
+        "elasticsearch": {
+          "name": "Elasticsearch",
+          "companies": ["Hepsiburada"]
+        },
+        "docker": {
+          "name": "Docker",
+          "companies": ["Hepsiburada"]
+        },
+        "git": {
+          "name": "Git",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "sql": {
+          "name": "SQL",
+          "companies": ["Hepsiburada"]
+        },
+        "bigquery": {
+          "name": "BigQuery",
+          "companies": ["Hepsiburada"]
+        },
+        "redis": {
+          "name": "Redis",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "mongodb": {
+          "name": "MongoDB",
+          "companies": ["Hepsiburada", "Getir"]
+        },
+        "prompt-engineering": {
+          "name": "Prompt Engineering",
+          "companies": ["Kişisel Projeler", "Hepsiburada", "Getir"]
+        }
+      },
+      "languages": {
+        "english": {
+          "name": "İngilizce",
+          "level": "Orta Üstü"
+        }
+      },
+      "interests": {
+        "debate": {
+          "name": "Münazara"
+        },
+        "photography": {
+          "name": "Amatör Fotoğrafçılık"
+        }
+      }
+    },
+    "summaries": {
+      "work": {
+        "title": "İş Deneyimi Özeti",
+        "button": "İş Deneyimi Özeti",
+        "items": [
+          "3+ yıl Back-End geliştirme deneyimi",
+          "Hepsiburada'da reklam teknolojilerinde uzmanlık",
+          ".NET Core, Golang ve mikroservis mimarisinde güçlü yetkinlik",
+          "Yüksek ölçekli dağıtık sistem deneyimi",
+          "Kafka ve BigQuery ile veri işleme yetkinliği",
+          "Elasticsearch/OpenSearch ile arama optimizasyonu uzmanlığı"
+        ]
+      },
+      "skills": {
+        "title": "Yetenek Özeti",
+        "button": "Yetenek Özeti",
+        "items": [
+          "Backend: .NET Core, Golang",
+          "Veritabanları: MongoDB, Redis",
+          "Arama: Elasticsearch, OpenSearch",
+          "Bulut & DevOps: Docker, Kubernetes, GCP",
+          "Mesaj Kuyruğu: Apache Kafka",
+          "Analitik: Google BigQuery",
+          "Versiyon Kontrol: Git",
+          "Soft Skills: Ekip Çalışması, Problem Çözme"
+        ]
+      }
+    }
+  }
+}

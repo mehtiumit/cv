@@ -9,7 +9,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-color: var(--color-black);
+  background-color: var(--text);
   border: none;
   cursor: pointer;
   display: flex;
@@ -21,29 +21,29 @@
 
 .info-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--card-hover-shadow);
   opacity: 1;
 }
 
 .info-icon {
   width: 20px;
   height: 20px;
-  color: white;
+  color: var(--background);
 }
 
 .tooltip {
   position: absolute;
   bottom: calc(100% + 8px);
   right: 0;
-  background-color: var(--color-black);
-  color: white;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text);
   padding: 0.75rem 1rem;
   border-radius: 4px;
   font-size: 0.75rem;
   white-space: nowrap;
   z-index: 10;
   opacity: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--card-hover-shadow);
   animation: fadeIn 0.2s ease forwards;
 }
 
@@ -54,7 +54,7 @@
   right: 10px;
   border-width: 4px;
   border-style: solid;
-  border-color: var(--color-black) transparent transparent transparent;
+  border-color: var(--tooltip-background) transparent transparent transparent;
 }
 
 @keyframes fadeIn {

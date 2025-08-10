@@ -1,15 +1,104 @@
+/* Font loading optimization */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+}
+
 :root {
+  /* Font variables */
+  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Base colors */
   --color-black: #000000;
   --color-gray-dark: #333333;
   --color-gray-medium: #666666;
   --color-gray-light: #EEEEEE;
-  --background: white;
-  --text: black;
+  
+  /* Light theme variables */
+  --background: #ffffff;
+  --text: #000000;
+  --text-rgb: 0, 0, 0;
+  --card-background: #f8f9fa;
+  --card-border: #e9ecef;
+  --card-hover-shadow: rgba(0, 0, 0, 0.1);
+  --border-color: #EEEEEE;
+  --hover-background: #f1f3f4;
+  --section-border: #EEEEEE;
+  --tooltip-background: #000000;
+  --tooltip-text: #ffffff;
+  --link-color: #333333;
+  --link-hover-color: #000000;
+  --timeline-color: #EEEEEE;
+  --timeline-dot-color: #333333;
+  --menu-text-color: #666666;
+  --menu-hover-color: #000000;
+  --menu-dot-color: #666666;
+  --menu-dot-hover-color: #000000;
+  
+  /* Layout variables */
+  --container-max-width: 1200px;
+  --container-padding: 2rem;
+  --grid-gap: 2rem;
+  --border-radius: 8px;
+  --border-radius-small: 4px;
+  --border-radius-large: 12px;
+  
+  /* Animation variables */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Typography variables */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  
+  /* Spacing variables */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
 }
 
 [data-theme='dark'] {
-  --background: black;
-  --text: white;
+  /* Dark theme variables */
+  --background: #0d1117;
+  --text: #f0f6fc;
+  --text-rgb: 240, 246, 252;
+  --card-background: #161b22;
+  --card-border: #30363d;
+  --card-hover-shadow: rgba(255, 255, 255, 0.1);
+  --border-color: #30363d;
+  --hover-background: #21262d;
+  --section-border: #30363d;
+  --tooltip-background: #f0f6fc;
+  --tooltip-text: #0d1117;
+  --link-color: #f0f6fc;
+  --link-hover-color: #ffffff;
+  --timeline-color: #30363d;
+  --timeline-dot-color: #f0f6fc;
+  --menu-text-color: #8b949e;
+  --menu-hover-color: #f0f6fc;
+  --menu-dot-color: #8b949e;
+  --menu-dot-hover-color: #f0f6fc;
+  
+  /* Update existing color variables for dark theme */
+  --color-black: #f0f6fc;
+  --color-gray-dark: #f0f6fc;
+  --color-gray-medium: #8b949e;
+  --color-gray-light: #30363d;
 }
 
 * {
@@ -18,12 +107,83 @@
   box-sizing: border-box;
 }
 
+/* Cross-browser compatibility */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default button styles across browsers */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Consistent input styling */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ensure images are responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Better table defaults */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Consistent heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-inter, 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--text);
+  /* Cross-browser text rendering */
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Prevent horizontal scrolling on mobile */
+  overflow-x: hidden;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  /* Font loading optimization */
+  font-display: swap;
 }
 
 .container {
@@ -45,7 +205,185 @@ body {
   justify-content: center;
 }
 
-/* Diğer stil tanımlamaları buraya gelecek */ 
+/* Accessibility utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus management: show outlines only for keyboard focus */
+*:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--text);
+  color: var(--background);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 9999;
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --card-border: #000000;
+    --border-color: #000000;
+  }
+  
+  [data-theme='dark'] {
+    --card-border: #ffffff;
+    --border-color: #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Container queries support */
+@supports (container-type: inline-size) {
+  .container-query {
+    container-type: inline-size;
+  }
+}
+
+/* Modern CSS features with fallbacks */
+@supports (backdrop-filter: blur(10px)) {
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
+@supports (display: grid) {
+  .grid-fallback {
+    display: grid;
+  }
+}
+
+@supports not (display: grid) {
+  .grid-fallback {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* CSS Logical Properties with fallbacks */
+@supports (margin-inline-start: 1rem) {
+  .logical-margin {
+    margin-inline-start: var(--space-md);
+    margin-inline-end: var(--space-md);
+  }
+}
+
+@supports not (margin-inline-start: 1rem) {
+  .logical-margin {
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--menu-text-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--menu-text-color) var(--card-background);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--text);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background: var(--text);
+  color: var(--background);
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .skip-link,
+  .sr-only {
+    display: none !important;
+  }
+  
+  /* Ensure good print layout */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  
+  /* Page break control */
+  .page-break-before {
+    page-break-before: always;
+  }
+  
+  .page-break-after {
+    page-break-after: always;
+  }
+  
+  .no-page-break {
+    page-break-inside: avoid;
+  }
+}
 
 .page-transition-enter {
   opacity: 0;

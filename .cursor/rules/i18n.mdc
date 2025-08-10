@@ -1,0 +1,14 @@
+---
+globs: app/**,components/**,context/**,utils/**
+description: Uluslararasılaştırma (i18n) kuralları ve en iyi uygulamalar
+---
+# i18n Kuralları
+
+- **Dil Bağlamı**: Geçerli dili [context/LanguageContext.tsx](mdc:context/LanguageContext.tsx) üzerinden sağlayın/tüketin.
+- **Çeviri Erişimi**: Metinleri [utils/translations.ts](mdc:utils/translations.ts) yardımıyla anahtar bazlı çekin. Sabit metin kullanmayın.
+- **Anahtar Yönetimi**: Yeni bir metin eklerken hem [data/translations/en.json](mdc:data/translations/en.json) hem de [data/translations/tr.json](mdc:data/translations/tr.json) dosyalarına anahtarı ekleyin.
+- **Doğrulama**: Eksik veya uyumsuz anahtarlar için [utils/translationValidation.ts](mdc:utils/translationValidation.ts) ve [utils/translationTesting.ts](mdc:utils/translationTesting.ts) araçlarını dikkate alın.
+- **Kapsama**: i18n kapsamı testleri için [test/integration/internationalization-coverage.test.jsx](mdc:test/integration/internationalization-coverage.test.jsx) dosyasını referans alın.
+- **Arayüz Öğeleri**: Dil değiştirici: [components/LanguageToggle.tsx](mdc:components/LanguageToggle.tsx). Çeviri metinlerini bileşenlerde merkezi yardımcılarla kullanın.
+- **Veri**: Proje verileri veya içeriklerde dil bağımlı alanlar varsa, anahtarlaşmış çevirilerle uyumlu hale getirin ([data/projects.ts](mdc:data/projects.ts)).
+

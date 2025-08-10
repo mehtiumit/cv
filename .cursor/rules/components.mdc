@@ -1,0 +1,12 @@
+---
+globs: components/**/*.tsx
+---
+# Bileşen Kuralları
+
+- **Dosya Yapısı**: Her bileşen tek bir dosyada olsun; dosya adı bileşen adıyla eşleşsin (örn. `ProjectCard` → `ProjectCard.tsx`).
+- **Stil**: İlgili CSS Module dosyası `styles/ProjectCard.module.css` gibi adlandırılsın.
+- **Çeviri**: Sabit metinleri doğrudan yazmayın. Dil bağlamını kullanın ve metinleri [utils/translations.ts](mdc:utils/translations.ts) üzerinden çekin.
+- **Erişilebilirlik**: Semantik HTML etiketlerini tercih edin; gerekli `aria-*` özelliklerini ekleyin. Örnek: [components/AccessibilityTest.tsx](mdc:components/AccessibilityTest.tsx)
+- **Bağımlılıklar**: Paylaşılan mantığı yardımcılara taşıyın; bileşenleri yalın ve sunuma odaklı tutun.
+- **Örnekler**: Dil değişimi için [components/LanguageToggle.tsx](mdc:components/LanguageToggle.tsx), gezinme için [components/Navigation.tsx](mdc:components/Navigation.tsx).
+

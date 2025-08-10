@@ -1,0 +1,185 @@
+/* Language Toggle Component Styles */
+.languageToggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 24px;
+  padding: 4px 6px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 92px;
+  height: 40px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden; /* slider gölgesini kapsül içinde kırp */
+}
+
+.languageToggle:hover {
+  background: var(--hover-background);
+  box-shadow: 0 4px 12px var(--card-hover-shadow);
+}
+
+.languageToggle:focus-visible {
+  box-shadow: 0 0 0 2px var(--card-border);
+}
+
+.languageToggle:active {
+  transform: scale(0.98);
+}
+
+.toggleContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  padding: 0 2px;
+}
+
+.languageOption {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--menu-text-color);
+  border-radius: 18px;
+  padding: 0 10px;
+}
+
+.languageOption.active {
+  color: var(--background);
+  background: var(--text);
+  box-shadow: 0 0 0 1px var(--text) inset;
+}
+
+/* slider kaldırıldı */
+
+/* flag icon kullanılmıyor */
+
+/* Loading state */
+.loadingIndicator {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color, #e2e8f0);
+  border-top: 2px solid var(--primary-color, #3b82f6);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+  .languageToggle {
+    /* inherit theme variables; no overrides needed */
+  }
+
+  .slider {
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .languageToggle {
+    border-width: 3px;
+  }
+
+  .languageOption {
+    font-weight: 700;
+  }
+
+  .sliderIndicator {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .languageToggle,
+  .languageOption,
+  .slider,
+  .sliderIndicator {
+    transition: none;
+  }
+
+  .loadingIndicator {
+    animation: none;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .languageToggle {
+    min-width: 72px;
+    height: 36px;
+  }
+
+  .languageOption {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .flagIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .slider {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sliderRight {
+    left: auto;
+    right: 4px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .languageToggle {
+    min-height: 44px; /* Minimum touch target size */
+    min-width: 88px;
+  }
+
+  .languageToggle:hover {
+    box-shadow: none;
+  }
+}
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,16 +1,18 @@
 .skills-card {
-  border: 1px solid var(--color-gray-light);
+  border: 1px solid var(--card-border);
+  background: var(--card-background);
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .skills-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--card-hover-shadow);
+  background: var(--hover-background);
 }
 
 .skills-section h3 {
   font-size: 1rem;
-  color: var(--color-gray-dark);
+  color: var(--text);
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -28,7 +30,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: var(--color-gray-dark);
+  color: var(--text);
   padding: 0.5rem;
   border-radius: 4px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -44,15 +46,15 @@
   bottom: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-black);
-  color: white;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text);
   padding: 0.75rem 1rem;
   border-radius: 4px;
   font-size: 0.75rem;
   white-space: nowrap;
   z-index: 10;
   opacity: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--card-hover-shadow);
   animation: fadeIn 0.2s ease forwards;
 }
 
@@ -64,7 +66,7 @@
   transform: translateX(-50%);
   border-width: 4px;
   border-style: solid;
-  border-color: var(--color-black) transparent transparent transparent;
+  border-color: var(--tooltip-background) transparent transparent transparent;
 }
 
 .companies {
@@ -106,13 +108,13 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: var(--color-gray-dark);
+  color: var(--text);
 }
 
 .info-icon {
   width: 16px;
   height: 16px;
-  color: var(--color-gray-medium);
+  color: var(--menu-text-color);
 }
 
 .interests-list {

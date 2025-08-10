@@ -1,0 +1,15 @@
+---
+globs: *.ts,*.tsx
+---
+# TypeScript Stil Rehberi
+
+- **İsimlendirme**: Değişken ve fonksiyon adları anlamlı, açık ve tam kelimeler kullanmalıdır. Kısaltmalardan kaçının.
+- **Türler**: Dışa açılan API'lerde ve `export` edilen fonksiyonlarda türleri açıkça belirtin. `any` kullanmayın.
+- **Akış**: Vaka dışı durumları erken döndürün (guard clauses). Derin iç içe yapıları (3+ seviye) önleyin.
+- **Hatalar**: Hata ve kenar durumlarını ilk önce ele alın.
+- **Yorumlar**: "Nasıl" yerine "neden" açıklayın. Önemsiz şeyleri yorumlamayın.
+- **Biçim**: Mevcut kod stiline uyun, alakasız satırları yeniden biçimlendirmeyin. Uzun satırları sarın.
+- **Güvenlik**: Güvensiz zorlama tür dönüşümlerinden kaçının; tür çıkarımını bozmayın.
+- **CSS Modülleri**: Bileşen stillerini `styles/` altındaki ilgili `.module.css` dosyalarından içe aktarın.
+- **İstemci Bileşenleri**: React hook'ları kullanıyorsanız dosyanın başına `"use client"` ekleyin.
+

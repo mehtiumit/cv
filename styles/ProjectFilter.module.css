@@ -1,0 +1,249 @@
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 0.5rem;
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .filterButtons {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.filterButton {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--menu-text-color);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterButton:hover {
+  color: var(--menu-hover-color);
+  background-color: var(--hover-background);
+  transform: translateY(-1px);
+}
+
+.filterButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--card-border);
+}
+
+.filterButton.active {
+  background-color: var(--text);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--card-hover-shadow);
+}
+
+.filterButton.active:hover {
+  background-color: var(--text);
+  color: var(--background);
+  transform: translateY(-2px);
+}
+
+.buttonText {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.filterButton:hover .buttonText {
+  transform: scale(1.05);
+}
+
+.filterButton.active .buttonText {
+  transform: scale(1.02);
+}
+
+.buttonIndicator {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 20px;
+  height: 2px;
+  background-color: var(--text);
+  border-radius: 1px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filterButton.active .buttonIndicator {
+  transform: translateX(-50%) scaleX(1);
+  background-color: var(--background);
+}
+
+.filterButton.animating {
+  pointer-events: none;
+}
+
+.filterButton.animating .buttonText {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive design */
+/* Large desktop */
+@media (min-width: 1200px) {
+  .filterButton {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+    min-width: 100px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+  .filterButton {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    min-width: 90px;
+  }
+}
+
+/* Tablet portrait */
+@media (max-width: 768px) {
+  .filterContainer {
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .filterButtons {
+    gap: 0.25rem;
+    padding: 0.375rem;
+  }
+  
+  .filterButton {
+    padding: 0.625rem 1rem;
+    font-size: 0.85rem;
+    min-width: 70px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 640px) {
+  .filterContainer {
+    padding: 0 1.25rem;
+    margin-bottom: 2.25rem;
+  }
+  
+  .filterButtons {
+    gap: 0.3rem;
+    padding: 0.4rem;
+  }
+  
+  .filterButton {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.82rem;
+    min-width: 68px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  .filterContainer {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filterButtons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.375rem;
+    padding: 0.5rem;
+  }
+  
+  .filterButton {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8rem;
+    min-width: 65px;
+    min-height: 44px; /* Minimum touch target size */
+  }
+  
+  .buttonIndicator {
+    width: 16px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .filterContainer {
+    padding: 0 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .filterButtons {
+    gap: 0.25rem;
+    padding: 0.375rem;
+  }
+  
+  .filterButton {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    min-width: 60px;
+    min-height: 40px;
+  }
+  
+  .buttonIndicator {
+    width: 14px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .filterButtons {
+    border-width: 2px;
+  }
+  
+  .filterButton.active {
+    border: 2px solid var(--text);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .filterButton,
+  .buttonText,
+  .buttonIndicator,
+  .filterButtons {
+    transition: none;
+  }
+  
+  .filterButton:hover {
+    transform: none;
+  }
+  
+  .filterButton.active {
+    transform: none;
+  }
+  
+  .filterButton.animating .buttonText {
+    animation: none;
+  }
+}

@@ -1,5 +1,6 @@
 .experience-card {
-  border: 1px solid var(--color-gray-light);
+  border: 1px solid var(--card-border);
+  background: var(--card-background);
   padding: 1.5rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
@@ -7,7 +8,8 @@
 }
 
 .experience-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--card-hover-shadow);
+  background: var(--hover-background);
   transform: translateY(-2px);
 }
 
@@ -26,20 +28,20 @@
 
 .company {
   font-weight: 600;
-  color: var(--color-black);
+  color: var(--text);
 }
 
 .separator {
-  color: var(--color-gray-medium);
+  color: var(--menu-text-color);
 }
 
 .work-type {
-  color: var(--color-gray-medium);
+  color: var(--menu-text-color);
 }
 
 .date-range {
   position: relative;
-  color: var(--color-gray-medium);
+  color: var(--menu-text-color);
   font-size: 0.875rem;
 }
 
@@ -47,15 +49,15 @@
   position: absolute;
   bottom: calc(100% + 8px);
   right: 0;
-  background-color: var(--color-black);
-  color: white;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text);
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   font-size: 0.75rem;
   white-space: nowrap;
   z-index: 10;
   opacity: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--card-hover-shadow);
   animation: fadeIn 0.2s ease forwards;
 }
 
@@ -66,12 +68,12 @@
   right: 10px;
   border-width: 4px;
   border-style: solid;
-  border-color: var(--color-black) transparent transparent transparent;
+  border-color: var(--tooltip-background) transparent transparent transparent;
 }
 
 .position {
   font-size: 1rem;
-  color: var(--color-gray-dark);
+  color: var(--text);
   margin-bottom: 1rem;
 }
 
@@ -87,7 +89,7 @@
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.6;
-  color: var(--color-gray-dark);
+  color: var(--text);
 }
 
 .bullet-list li:before {
@@ -97,7 +99,7 @@
   top: 0.6rem;
   width: 4px;
   height: 4px;
-  background-color: var(--color-gray-medium);
+  background-color: var(--menu-text-color);
   border-radius: 50%;
 }
 
@@ -132,7 +134,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--color-gray-light);
+  background: var(--timeline-color);
 }
 
 .experience-card::before {
@@ -143,6 +145,6 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--color-gray-dark);
+  background: var(--timeline-dot-color);
   border: 2px solid var(--background);
 } 

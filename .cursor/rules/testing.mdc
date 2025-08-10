@@ -1,0 +1,12 @@
+---
+globs: test/**,*.test.*
+description: Test yazımı ve kapsam rehberi
+---
+# Test Kuralları
+
+- **Altyapı**: Vitest + React Testing Library. Yapılandırma: [vitest.config.js](mdc:vitest.config.js), kurulum: [test/setup.js](mdc:test/setup.js).
+- **Birim Testleri**: Mantığı yoğun yardımcılar ve bağlam sağlayıcıları için birim testleri yazın (örn. [context/LanguageContext.tsx](mdc:context/LanguageContext.tsx)).
+- **Entegrasyon Testleri**: Kritik kullanıcı akışları için entegrasyon testlerini tercih edin (örn. [test/integration/ProjectCard.integration.test.jsx](mdc:test/integration/ProjectCard.integration.test.jsx)).
+- **i18n Kapsamı**: Yeni çeviri anahtarları eklendiğinde [test/integration/internationalization-coverage.test.jsx](mdc:test/integration/internationalization-coverage.test.jsx) ile kapsamın bozulmadığını doğrulayın.
+- **Performans Testleri**: Yazı tipi ve kritik yükleme için [test/performance/font-loading.test.js](mdc:test/performance/font-loading.test.js).
+

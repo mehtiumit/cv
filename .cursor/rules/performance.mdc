@@ -1,0 +1,12 @@
+---
+globs: app/**,components/**,utils/**
+description: Performans ve yükleme en iyi uygulamaları
+---
+# Performans Kuralları
+
+- **Font Yükleme**: `next/font` kullanın; test için [test/performance/font-loading.test.js](mdc:test/performance/font-loading.test.js).
+- **Kod Bölme**: Ağır bileşenleri dinamik içe aktarın; yalnızca gerektiğinde yükleyin.
+- **Resimler ve SVG**: `next/image` tercih edin; büyük SVG'leri bileşen içinde inline etmekten kaçının.
+- **Yeniden Render**: Prop'ların değişim sıklığını azaltın, gerektiğinde `React.memo` veya seçici context kullanımını tercih edin.
+- **Yardımcılar**: Ölçüm ve faydalı yardımcılar için [utils/performance.ts](mdc:utils/performance.ts).
+

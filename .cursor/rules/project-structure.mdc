@@ -1,0 +1,42 @@
+---
+alwaysApply: true
+---
+# Proje Yapısı ve Ana Dosyalar
+
+Bu depo Next.js (App Router) + TypeScript ile yapılandırılmıştır. Bileşenler CSS Modules ve Tailwind ile stillenmiştir.
+
+- **Giriş Noktaları**
+  - Kök düzen ve sayfa: [app/layout.tsx](mdc:app/layout.tsx), [app/page.tsx](mdc:app/page.tsx)
+  - Projeler sayfası: [app/projects/layout.tsx](mdc:app/projects/layout.tsx), [app/projects/page.tsx](mdc:app/projects/page.tsx)
+  - Metadata/SEO: [app/robots.ts](mdc:app/robots.ts), [app/sitemap.ts](mdc:app/sitemap.ts), [app/metadata.js](mdc:app/metadata.js)
+
+- **Bileşenler ve Stiller**
+  - Bileşenler: [components/](mdc:components)
+  - CSS Modülleri: [styles/*.module.css](mdc:styles)
+  - Temel global stiller: [styles/globals.css](mdc:styles/globals.css)
+
+- **Durum ve Sağlayıcılar**
+  - Dil: [context/LanguageContext.tsx](mdc:context/LanguageContext.tsx)
+  - Animasyon: [context/AnimationContext.tsx](mdc:context/AnimationContext.tsx)
+
+- **Veri ve Uluslararasılaştırma (i18n)**
+  - Çeviri dosyaları: [data/translations/en.json](mdc:data/translations/en.json), [data/translations/tr.json](mdc:data/translations/tr.json)
+  - Çeviri yardımcıları: [utils/translations.ts](mdc:utils/translations.ts), [utils/translationValidation.ts](mdc:utils/translationValidation.ts), [utils/translationTesting.ts](mdc:utils/translationTesting.ts)
+  - Örnek veri: [data/projects.ts](mdc:data/projects.ts)
+
+- **Tipler ve Yardımcılar**
+  - Tipler: [types/](mdc:types)
+  - Performans: [utils/performance.ts](mdc:utils/performance.ts)
+
+- **Test Altyapısı**
+  - Yapılandırma: [vitest.config.js](mdc:vitest.config.js)
+  - Kurulum: [test/setup.js](mdc:test/setup.js)
+  - Testler: [test/](mdc:test)
+
+- **Varlıklar ve Yapılandırmalar**
+  - Statik içerik: [public/](mdc:public)
+  - Tailwind: [tailwind.config.ts](mdc:tailwind.config.ts)
+  - Yazı tipleri: [app/fonts.js](mdc:app/fonts.js)
+
+Not: Depoda hem `app/` hem de `src/app/` bulunur. Yeni rotaları ve global yapılandırmaları `app/` altında tutun; `src/app/` geçmiş dosyalar içerebilir ve yeni geliştirmeler için tercih edilmez.
+

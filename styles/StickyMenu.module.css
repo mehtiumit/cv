@@ -12,7 +12,7 @@
 .menuItem {
   background: none;
   border: none;
-  color: var(--color-gray-medium);
+  color: var(--menu-text-color);
   font-size: 0.875rem;
   padding: 0.5rem;
   cursor: pointer;
@@ -29,18 +29,18 @@
   top: 50%;
   width: 4px;
   height: 4px;
-  background-color: var(--color-gray-medium);
+  background-color: var(--menu-dot-color);
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.2s ease;
 }
 
 .menuItem:hover {
-  color: var(--color-black);
+  color: var(--menu-hover-color);
 }
 
 .menuItem:hover::before {
-  background-color: var(--color-black);
+  background-color: var(--menu-dot-hover-color);
   width: 6px;
   height: 6px;
 }
