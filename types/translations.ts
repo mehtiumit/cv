@@ -199,6 +199,67 @@ export interface TranslationFile {
 // Language type
 export type Language = 'en' | 'tr';
 
+// Language metadata used by UI and context
+export interface LanguageInfo {
+  code: Language;
+  name: string;
+  nativeName: string;
+  isRTL: boolean;
+}
+
+// Alias the full translation file shape as TranslationKeys for convenience
+export type TranslationKeys = TranslationFile;
+
+// Translation function contract used across app
+export type TranslationFunction = ((key: string, fallback?: string) => string) & {
+  getErrors?: () => TranslationError[];
+  clearErrors?: () => void;
+  hasErrors?: () => boolean;
+};
+
+// Error model for missing/invalid translations
+export interface TranslationError {
+  key: string;
+  language: Language;
+  fallback: string;
+  timestamp: Date;
+}
+
+// Validation result when comparing translation files
+export interface TranslationValidationResult {
+  isValid: boolean;
+  missingKeys: string[];
+  extraKeys: string[];
+  errors: TranslationError[];
+}
+
+// Utility types to infer nested key paths and values
+type Join<K, P> = K extends string | number
+  ? P extends string | number
+    ? `${K}.${P}`
+    : never
+  : never;
+
+export type DeepTranslationKeys<T> = T extends string
+  ? never
+  : T extends Array<any>
+    ? never
+    : {
+        [K in keyof T & string]: T[K] extends string
+          ? K
+          : T[K] extends object
+            ? Join<K, DeepTranslationKeys<T[K]>>
+            : never
+      }[keyof T & string];
+
+export type TranslationValue<T, P extends string> = P extends `${infer K}.${infer Rest}`
+  ? K extends keyof T
+    ? TranslationValue<T[K], Rest>
+    : never
+  : P extends keyof T
+    ? T[P]
+    : never;
+
 // Translation key paths (for type-safe access)
 export type TranslationKeyPath = 
   | `navigation.${keyof NavigationTranslations}`

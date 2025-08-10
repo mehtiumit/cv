@@ -72,10 +72,11 @@ const AccessibilityTest = () => {
   const getLuminance = (color: string): number => {
     if (color.includes('rgb')) {
       const values = color.match(/\d+/g)
-      if (values && values.length >= 3) {
-        const r = parseInt(values[0]) / 255
-        const g = parseInt(values[1]) / 255
-        const b = parseInt(values[2]) / 255
+      if (Array.isArray(values) && values.length >= 3) {
+        const [rStr, gStr, bStr] = values as [string, string, string, ...string[]]
+        const r = parseInt(rStr, 10) / 255
+        const g = parseInt(gStr, 10) / 255
+        const b = parseInt(bStr, 10) / 255
         return 0.2126 * r + 0.7152 * g + 0.0722 * b
       }
     }

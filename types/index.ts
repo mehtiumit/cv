@@ -136,12 +136,8 @@ export {
   ValidationContext
 } from './validators';
 
-// Re-export translation utilities
-export type {
-  TypeSafeTranslationKey,
-  TypeSafeTranslationFunction,
-  NestedKeyOf
-} from './translations';
+// Re-export translation utilities (kept minimal to avoid missing symbols)
+export type { TranslationKeyPath } from './translations';
 
 // Language and localization types
 export type Language = 'en' | 'tr';

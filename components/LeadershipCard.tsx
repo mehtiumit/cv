@@ -10,7 +10,7 @@ interface LeadershipCardProps {
   bulletPoints: string[]
 }
 
-export default function LeadershipCard({ organization, location, role, period, bulletPoints }: LeadershipCardProps): JSX.Element {
+export default function LeadershipCard({ organization, location, role, period, bulletPoints }: LeadershipCardProps) {
   return (
     <div className={styles['leadership-card']}>
       <div className={styles['card-header']}>

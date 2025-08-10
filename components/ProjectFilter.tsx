@@ -73,7 +73,9 @@ export default function ProjectFilter({ activeFilter, onFilterChange }: ProjectF
         {platformOptions.map((option, index) => (
           <button
             key={option.value}
-            ref={(el) => (buttonRefs.current[index] = el)}
+            ref={(el) => {
+              buttonRefs.current[index] = el
+            }}
             className={`${styles.filterButton} ${activeFilter === option.value ? styles.active : ''} ${isAnimating ? styles.animating : ''}`}
             onClick={() => handleFilterClick(option.value as ProjectFilterProps['activeFilter'])}
             onKeyDown={(e) => handleKeyDown(e, option.value as ProjectFilterProps['activeFilter'], index)}

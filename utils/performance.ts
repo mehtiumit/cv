@@ -1,5 +1,5 @@
 // Performance optimization utilities (TypeScript)
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export type AnyFunction<TArgs extends any[] = any[], TReturn = void> = (...args: TArgs) => TReturn
 
@@ -29,22 +29,23 @@ export const throttle = <F extends AnyFunction>(func: F, limit: number): F => {
 }
 
 export const useIntersectionObserver = (options: IntersectionObserverInit = {}): [
-  React.RefObject<HTMLElement>,
+  React.RefObject<HTMLElement | null>,
   boolean,
   IntersectionObserverEntry | null
 ] => {
   const [isIntersecting, setIsIntersecting] = useState(false)
   const [entry, setEntry] = useState<IntersectionObserverEntry | null>(null)
-  const elementRef = useRef<HTMLElement>(null)
+  const elementRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
     const element = elementRef.current
     if (!element) return
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsIntersecting(entry.isIntersecting)
-        setEntry(entry)
+      ([firstEntry]) => {
+        if (!firstEntry) return
+        setIsIntersecting(firstEntry.isIntersecting)
+        setEntry(firstEntry)
       },
       {
         threshold: 0.1,
@@ -110,10 +111,13 @@ export const withLazyLoading = <P extends object>(Component: React.ComponentType
       }
     }, [isIntersecting, hasLoaded])
 
-    return (
-      <div ref={elementRef as React.RefObject<HTMLDivElement>}>
-        {hasLoaded ? <Component {...props} /> : <div style={{ minHeight: '200px' }} />}
-      </div>
+    // Avoid JSX in .ts files to prevent TS parsing issues
+    return React.createElement(
+      'div',
+      { ref: elementRef as React.RefObject<HTMLDivElement> },
+      hasLoaded
+        ? React.createElement(Component as React.ComponentType<any>, { ...(props as any) })
+        : React.createElement('div', { style: { minHeight: '200px' } })
     )
   }
 }

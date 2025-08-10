@@ -9,11 +9,9 @@ import enTranslations from '../data/translations/en.json'
 
 const siteUrl = process.env.SITE_URL || 'http://localhost:3000'
 const enSkills: string[] = Object.values(
-  // @ts-expect-error json shape
   (enTranslations?.content?.skills?.techStack as Record<string, { name: string }> | undefined) ?? {}
 ).map((s) => s.name)
 const trSkills: string[] = Object.values(
-  // @ts-expect-error json shape
   (trTranslations?.content?.skills?.techStack as Record<string, { name: string }> | undefined) ?? {}
 ).map((s) => s.name)
 const combinedSkillKeywords = Array.from(new Set([...enSkills, ...trSkills]))
@@ -61,7 +59,7 @@ export const metadata: Metadata = {
         alt: 'Mehti Ümit Yıldırım',
       },
     ],
-    localeAlternate: ['en_US'],
+    alternateLocale: ['en_US'],
   },
   twitter: {
     card: 'summary_large_image',

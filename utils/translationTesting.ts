@@ -90,7 +90,7 @@ export const testTranslationFunction = (
   }>
 ): Array<{
   key: string
-  expected?: string
+  expected?: string | undefined
   actual: string
   passed: boolean
   description: string

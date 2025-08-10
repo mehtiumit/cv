@@ -5,7 +5,7 @@ import styles from '../styles/EducationCard.module.css'
 import { useTranslation, useLanguage } from '../context/LanguageContext'
 import { getNestedTranslation } from '../data/translations'
 
-export default function EducationCard(): JSX.Element {
+export default function EducationCard() {
   const { t } = useTranslation()
   const { language } = useLanguage()
   const edu = getNestedTranslation(language, 'content.education.akdeniz-university') as any

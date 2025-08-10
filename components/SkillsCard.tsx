@@ -21,10 +21,10 @@ import styles from "../styles/SkillsCard.module.css";
 import { useTranslation } from "../context/LanguageContext";
 
 type TechItem = {
-  icon: React.ComponentType<{ className?: string }>
-  name: string
-  companies: string[]
-}
+  icon: React.ComponentType<{ className?: string }>;
+  name: string;
+  companies: string[];
+};
 
 const techStack: TechItem[] = [
   { icon: SiDotnet, name: ".NET Core", companies: ["Hepsiburada"] },
@@ -37,17 +37,21 @@ const techStack: TechItem[] = [
   { icon: SiGooglecloud, name: "BigQuery", companies: ["Hepsiburada"] },
   { icon: SiRedis, name: "Redis", companies: ["Hepsiburada", "Getir"] },
   { icon: SiMongodb, name: "MongoDB", companies: ["Hepsiburada", "Getir"] },
-  { icon: BiBrain, name: "Prompt Engineering", companies: ["Personal Projects", "Hepsiburada", "Getir"] },
+  {
+    icon: BiBrain,
+    name: "Prompt Engineering",
+    companies: ["Personal Projects", "Hepsiburada", "Getir"],
+  },
 ];
 
-export default function SkillsCard(): JSX.Element {
+export default function SkillsCard() {
   const [activeTooltip, setActiveTooltip] = useState<number | null>(null);
   const { t } = useTranslation();
 
   return (
     <div className={styles["skills-card"]}>
       <div className={styles["skills-section"]}>
-        <h3>{t('content.skills.sections.technical')}</h3>
+        <h3>{t("content.skills.sections.technical")}</h3>
         <div className={styles["tech-grid"]}>
           {techStack.map((tech, index) => (
             <div
@@ -74,23 +78,26 @@ export default function SkillsCard(): JSX.Element {
 
       <div className={styles["additional-section"]}>
         <div className={styles["language-section"]}>
-          <h3>{t('content.skills.sections.language')}</h3>
+          <h3>{t("content.skills.sections.language")}</h3>
           <div className={styles["info-item"]}>
             <IoLanguage className={styles["info-icon"]} />
-            <span>{t('content.skills.languages.english.name')} ({t('content.skills.languages.english.level')})</span>
+            <span>
+              {t("content.skills.languages.english.name")} (
+              {t("content.skills.languages.english.level")})
+            </span>
           </div>
         </div>
 
         <div className={styles["interests-section"]}>
-          <h3>{t('content.skills.sections.interests')}</h3>
+          <h3>{t("content.skills.sections.interests")}</h3>
           <div className={styles["interests-list"]}>
             <div className={styles["info-item"]}>
               <GiPublicSpeaker className={styles["info-icon"]} />
-              <span>{t('content.skills.interests.debate.name')}</span>
+              <span>{t("content.skills.interests.debate.name")}</span>
             </div>
             <div className={styles["info-item"]}>
               <FaCamera className={styles["info-icon"]} />
-              <span>{t('content.skills.interests.photography.name')}</span>
+              <span>{t("content.skills.interests.photography.name")}</span>
             </div>
           </div>
         </div>
@@ -98,5 +105,3 @@ export default function SkillsCard(): JSX.Element {
     </div>
   );
 }
-
-

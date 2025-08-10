@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import styles from '../styles/ScrollProgressBar.module.css'
 
-export default function ScrollProgressBar(): JSX.Element {
+export default function ScrollProgressBar() {
   const [progress, setProgress] = useState<number>(0)
 
   useEffect(() => {

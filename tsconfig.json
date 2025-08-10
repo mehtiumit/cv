@@ -27,6 +27,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "@/types": ["./types/index.ts"],
       "@/types/*": ["./types/*"],
       "@/components/*": ["./components/*"],
       "@/data/*": ["./data/*"],

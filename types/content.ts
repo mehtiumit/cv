@@ -2,12 +2,9 @@
 // These types define the structure for all content data in the application
 
 import { Language, Platform, DateString } from './index';
+import type { LocalizedString } from './translations';
 
-// Base localized string interface
-export interface LocalizedString {
-  en: string;
-  tr: string;
-}
+// Uses LocalizedString from translations.ts
 
 // Base content interface with multilingual support
 export interface BaseContent {

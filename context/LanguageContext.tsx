@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
-import { Language, LanguageContextType, LanguageInfo } from '@/types'
-import { TranslationKeys, TranslationFunction, TranslationError } from '@/types/translations'
+import { Language, LanguageContextType } from '@/types'
+import { TranslationKeys, TranslationFunction, TranslationError, LanguageInfo } from '@/types/translations'
 
 // Import translation files
 import enTranslations from '../data/translations/en.json'

@@ -25,10 +25,10 @@ const translations: Record<Language, TranslationKeys> = {
  * Type-safe translation key validator
  * Ensures that translation keys exist in the translation files
  */
-export const validateTranslationKey = <T extends TranslationKeys>(
+export const validateTranslationKey = (
   key: string,
-  translations: T
-): key is DeepTranslationKeys<T> => {
+  translations: Record<string, any>
+): boolean => {
   const keys = key.split('.')
   let current: any = translations
   
@@ -46,10 +46,10 @@ export const validateTranslationKey = <T extends TranslationKeys>(
 /**
  * Get nested translation value with type safety
  */
-export const getTranslationValue = <T extends TranslationKeys, K extends string>(
-  translations: T,
-  key: K
-): TranslationValue<T, K> | undefined => {
+export const getTranslationValue = (
+  translations: Record<string, any>,
+  key: string
+): any => {
   const keys = key.split('.')
   let current: any = translations
   

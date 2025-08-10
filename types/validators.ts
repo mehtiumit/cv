@@ -7,9 +7,9 @@ import {
   Experience, 
   Education, 
   SkillCategory, 
-  Leadership,
-  LocalizedString 
+  Leadership
 } from './content';
+import type { LocalizedString } from './translations';
 import { TranslationKeys } from './translations';
 
 // Language validation

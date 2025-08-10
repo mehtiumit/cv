@@ -6,7 +6,7 @@ import LanguageToggle from './LanguageToggle'
 import ThemeToggle from './ThemeToggle'
 import styles from '../styles/Navigation.module.css'
 
-export default function Navigation(): JSX.Element {
+export default function Navigation(){
   const pathname = usePathname()
   const isProjectsPage = pathname === '/projects'
   const { t } = useTranslation()
