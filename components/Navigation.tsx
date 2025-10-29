@@ -4,7 +4,6 @@ import { usePathname } from 'next/navigation'
 import { useTranslation } from '../context/LanguageContext'
 import LanguageToggle from './LanguageToggle'
 import ThemeToggle from './ThemeToggle'
-import styles from '../styles/Navigation.module.css'
 
 export default function Navigation(){
   const pathname = usePathname()
@@ -12,26 +11,26 @@ export default function Navigation(){
   const { t } = useTranslation()
 
   return (
-    <nav 
-      className={styles.navigation}
+    <nav
+      className="sticky top-0 z-10 bg-background/80 py-4 backdrop-blur-md"
       role="navigation"
       aria-label={t('navigation.ariaLabel')}
     >
-      <div className={styles.navContent}>
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <LanguageToggle />
         {isProjectsPage ? (
-          <Link 
-            href="/" 
-            className={styles.homeLink}
+          <Link
+            href="/"
+            className="text-sm font-medium text-muted hover:text-primary"
             aria-label={t('navigation.returnToHome')}
           >
-            <span aria-hidden="true">←</span>
+            <span aria-hidden="true">← </span>
             <span>{t('navigation.home')}</span>
           </Link>
         ) : (
-          <Link 
-            href="/projects" 
-            className={styles.projectsLink}
+          <Link
+            href="/projects"
+            className="text-sm font-medium text-muted hover:text-primary"
             aria-label={t('navigation.projectsAriaLabel')}
           >
             {t('navigation.projects')}

@@ -7,98 +7,52 @@
   src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  /* Font variables */
-  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  
-  /* Base colors */
-  --color-black: #000000;
-  --color-gray-dark: #333333;
-  --color-gray-medium: #666666;
-  --color-gray-light: #EEEEEE;
-  
-  /* Light theme variables */
-  --background: #ffffff;
-  --text: #000000;
-  --text-rgb: 0, 0, 0;
-  --card-background: #f8f9fa;
-  --card-border: #e9ecef;
-  --card-hover-shadow: rgba(0, 0, 0, 0.1);
-  --border-color: #EEEEEE;
-  --hover-background: #f1f3f4;
-  --section-border: #EEEEEE;
-  --tooltip-background: #000000;
-  --tooltip-text: #ffffff;
-  --link-color: #333333;
-  --link-hover-color: #000000;
-  --timeline-color: #EEEEEE;
-  --timeline-dot-color: #333333;
-  --menu-text-color: #666666;
-  --menu-hover-color: #000000;
-  --menu-dot-color: #666666;
-  --menu-dot-hover-color: #000000;
-  
-  /* Layout variables */
-  --container-max-width: 1200px;
-  --container-padding: 2rem;
-  --grid-gap: 2rem;
-  --border-radius: 8px;
-  --border-radius-small: 4px;
-  --border-radius-large: 12px;
-  
-  /* Animation variables */
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
-  --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  
-  /* Typography variables */
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 2rem;
-  --font-size-4xl: 2.5rem;
-  
-  /* Spacing variables */
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 4rem;
+  --background: #FAFAFA;
+  --primary: #2563EB;
+  --text: #111827;
+  --muted: #6B7280;
 }
 
 [data-theme='dark'] {
-  /* Dark theme variables */
-  --background: #0d1117;
-  --text: #f0f6fc;
-  --text-rgb: 240, 246, 252;
-  --card-background: #161b22;
-  --card-border: #30363d;
-  --card-hover-shadow: rgba(255, 255, 255, 0.1);
-  --border-color: #30363d;
-  --hover-background: #21262d;
-  --section-border: #30363d;
-  --tooltip-background: #f0f6fc;
-  --tooltip-text: #0d1117;
-  --link-color: #f0f6fc;
-  --link-hover-color: #ffffff;
-  --timeline-color: #30363d;
-  --timeline-dot-color: #f0f6fc;
-  --menu-text-color: #8b949e;
-  --menu-hover-color: #f0f6fc;
-  --menu-dot-color: #8b949e;
-  --menu-dot-hover-color: #f0f6fc;
-  
-  /* Update existing color variables for dark theme */
-  --color-black: #f0f6fc;
-  --color-gray-dark: #f0f6fc;
-  --color-gray-medium: #8b949e;
-  --color-gray-light: #30363d;
+  --background: #0F1115;
+  --text: #F9FAFB;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+small {
+  font-size: 14px;
+  letter-spacing: 0.05em;
 }
 
 * {

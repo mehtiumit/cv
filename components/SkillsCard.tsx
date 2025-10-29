@@ -17,7 +17,6 @@ import { BiBrain } from "react-icons/bi";
 import { IoLanguage } from "react-icons/io5";
 import { FaCamera } from "react-icons/fa";
 import { GiPublicSpeaker } from "react-icons/gi";
-import styles from "../styles/SkillsCard.module.css";
 import { useTranslation } from "../context/LanguageContext";
 
 type TechItem = {
@@ -49,55 +48,55 @@ export default function SkillsCard() {
   const { t } = useTranslation();
 
   return (
-    <div className={styles["skills-card"]}>
-      <div className={styles["skills-section"]}>
-        <h3>{t("content.skills.sections.technical")}</h3>
-        <div className={styles["tech-grid"]}>
-          {techStack.map((tech, index) => (
-            <div
-              key={index}
-              className={styles["tech-item"]}
-              onMouseEnter={() => setActiveTooltip(index)}
-              onMouseLeave={() => setActiveTooltip(null)}
-            >
-              <tech.icon className="tech-icon" />
-              <span>{tech.name}</span>
-              {activeTooltip === index && (
-                <div className={styles["tech-tooltip"]}>
-                  <div className={styles.companies}>
-                    {tech.companies.map((company, idx) => (
-                      <span key={idx}>{company}</span>
-                    ))}
+    <div className="rounded-xl bg-white p-6 shadow-md dark:bg-dark-background">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div>
+          <h3 className="text-xl font-semibold">{t("content.skills.sections.technical")}</h3>
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            {techStack.map((tech, index) => (
+              <div
+                key={index}
+                className="relative flex items-center space-x-2"
+                onMouseEnter={() => setActiveTooltip(index)}
+                onMouseLeave={() => setActiveTooltip(null)}
+              >
+                <tech.icon className="text-muted" />
+                <span>{tech.name}</span>
+                {activeTooltip === index && (
+                  <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 rounded-md bg-gray-800 px-2 py-1 text-xs text-white">
+                    <div className="flex flex-col space-y-1">
+                      {tech.companies.map((company, idx) => (
+                        <span key={idx}>{company}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className={styles["additional-section"]}>
-        <div className={styles["language-section"]}>
-          <h3>{t("content.skills.sections.language")}</h3>
-          <div className={styles["info-item"]}>
-            <IoLanguage className={styles["info-icon"]} />
-            <span>
-              {t("content.skills.languages.english.name")} (
-              {t("content.skills.languages.english.level")})
-            </span>
+                )}
+              </div>
+            ))}
           </div>
         </div>
-
-        <div className={styles["interests-section"]}>
-          <h3>{t("content.skills.sections.interests")}</h3>
-          <div className={styles["interests-list"]}>
-            <div className={styles["info-item"]}>
-              <GiPublicSpeaker className={styles["info-icon"]} />
-              <span>{t("content.skills.interests.debate.name")}</span>
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold">{t("content.skills.sections.language")}</h3>
+            <div className="mt-4 flex items-center space-x-2">
+              <IoLanguage className="text-muted" />
+              <span>
+                {t("content.skills.languages.english.name")} (
+                {t("content.skills.languages.english.level")})
+              </span>
             </div>
-            <div className={styles["info-item"]}>
-              <FaCamera className={styles["info-icon"]} />
-              <span>{t("content.skills.interests.photography.name")}</span>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold">{t("content.skills.sections.interests")}</h3>
+            <div className="mt-4 space-y-2">
+              <div className="flex items-center space-x-2">
+                <GiPublicSpeaker className="text-muted" />
+                <span>{t("content.skills.interests.debate.name")}</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaCamera className="text-muted" />
+                <span>{t("content.skills.interests.photography.name")}</span>
+              </div>
             </div>
           </div>
         </div>

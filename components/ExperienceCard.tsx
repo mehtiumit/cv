@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 import { useTranslation } from '../context/LanguageContext'
-import styles from '../styles/ExperienceCard.module.css'
-
 interface ExperienceCardProps {
   company: string
   workType: string
@@ -38,30 +36,30 @@ export default function ExperienceCard({ company, workType, position, startDate,
   const [showDuration, setShowDuration] = useState(false)
 
   return (
-    <div className={styles['experience-card']}>
-      <div className={styles['card-header']}>
-        <div className={styles['company-info']}>
-          <span className={styles.company}>{company}</span>
-          <span className={styles.separator}>/</span>
-          <span className={styles['work-type']}>{workType}</span>
+    <div className="rounded-xl bg-white p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark-background">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+          <span className="font-semibold">{company}</span>
+          <span className="text-muted">/</span>
+          <span className="text-sm text-muted">{workType}</span>
         </div>
         <div
-          className={styles['date-range']}
+          className="relative text-sm text-muted"
           onMouseEnter={() => setShowDuration(true)}
           onMouseLeave={() => setShowDuration(false)}
         >
           {startDate} - {endDate}
           {showDuration && (
-            <div className={styles['duration-tooltip']}>
+            <div className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 rounded-md bg-gray-800 px-2 py-1 text-xs text-white">
               {calculateDuration(startDate, endDate, t)}
             </div>
           )}
         </div>
       </div>
-      <h4 className={styles.position}>{position}</h4>
-      <ul className={styles['bullet-list']}>
+      <h4 className="mt-2 text-lg font-semibold">{position}</h4>
+      <ul className="mt-4 list-disc space-y-2 pl-5">
         {bulletPoints.map((point, index) => (
-          <li key={index}>{point}</li>
+          <li key={index} className="text-muted">{point}</li>
         ))}
       </ul>
     </div>

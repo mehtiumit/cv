@@ -1,7 +1,6 @@
 'use client'
 
 import { IoSchoolOutline } from 'react-icons/io5'
-import styles from '../styles/EducationCard.module.css'
 import { useTranslation, useLanguage } from '../context/LanguageContext'
 import { getNestedTranslation } from '../data/translations'
 
@@ -11,18 +10,18 @@ export default function EducationCard() {
   const edu = getNestedTranslation(language, 'content.education.akdeniz-university') as any
 
   return (
-    <div className={styles['education-card']}>
-      <div className={styles['card-header']}>
-        <div className={styles['school-info']}>
-          <IoSchoolOutline className={styles.icon} />
-          <span className={styles.school}>{edu?.school || 'Akdeniz University'}</span>
-          <span className={styles.separator}>/</span>
-          <span className={styles.location}>{edu?.location || 'Antalya'}</span>
+    <div className="rounded-xl bg-white p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg dark:bg-dark-background">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+          <IoSchoolOutline className="text-muted" />
+          <span className="font-semibold">{edu?.school || 'Akdeniz University'}</span>
+          <span className="text-muted">/</span>
+          <span className="text-sm text-muted">{edu?.location || 'Antalya'}</span>
         </div>
-        <div className={styles.period}>{edu?.period || '2016 - 2020'}</div>
+        <div className="text-sm text-muted">{edu?.period || '2016 - 2020'}</div>
       </div>
-      <h4 className={styles.degree}>{edu?.degree || 'Management Information Systems'}</h4>
-      <p className={styles.description}>
+      <h4 className="mt-2 text-lg font-semibold">{edu?.degree || 'Management Information Systems'}</h4>
+      <p className="mt-2 text-muted">
         {edu?.description || t('content.education.akdeniz-university.description')}
       </p>
     </div>

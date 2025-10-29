@@ -3,26 +3,24 @@
 import { useState } from 'react'
 import { IoInformationCircle } from 'react-icons/io5'
 import { useTranslation } from '../context/LanguageContext'
-import styles from '../styles/InfoButton.module.css'
-
 export default function InfoButton()  {
   const { t } = useTranslation()
   const [showTooltip, setShowTooltip] = useState<boolean>(false)
 
   return (
-    <div className={styles['info-button-container']}>
+    <div className="fixed bottom-4 right-4">
       <button
-        className={styles['info-button']}
+        className="rounded-full bg-primary p-3 text-white shadow-lg transition-transform duration-300 hover:scale-110"
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
         type="button"
         aria-describedby={showTooltip ? 'info-tooltip' : undefined}
         aria-label={t('common.infoButtonTooltip', 'I created this site using Cursor and prompt engineering skills without any Next.js knowledge.')}
       >
-        <IoInformationCircle className={styles['info-icon']} />
+        <IoInformationCircle className="h-6 w-6" />
       </button>
       {showTooltip && (
-        <div className={styles.tooltip} role="tooltip" id="info-tooltip">
+        <div className="absolute bottom-full right-0 mb-2 w-64 rounded-md bg-gray-800 px-3 py-2 text-sm text-white shadow-lg" role="tooltip" id="info-tooltip">
           {t('common.infoButtonTooltip', 'I created this site using Cursor and prompt engineering skills without any Next.js knowledge.')}
         </div>
       )}

@@ -1,9 +1,7 @@
 'use client'
 
-import styles from '../styles/AnimatedName.module.css'
-
 export default function AnimatedName() {
-  return <h1 className={styles['animated-name']}>Mehti Ümit Yıldırım</h1>
+  return <h1 className="text-4xl font-bold tracking-tight text-text sm:text-6xl">Mehti Ümit Yıldırım</h1>
 }
 
 
