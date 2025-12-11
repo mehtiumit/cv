@@ -1,6 +1,7 @@
 .animated-name {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--text);
+  letter-spacing: -0.02em;
 } 

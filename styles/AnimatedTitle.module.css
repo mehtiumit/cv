@@ -1,7 +1,8 @@
 .animated-title {
-  font-size: 1.5rem;
-  color: var(--text);
+  font-size: 1.125rem;
+  color: var(--menu-text-color);
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0;
 } 

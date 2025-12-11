@@ -3,13 +3,13 @@
   background: var(--card-background);
   padding: 1.5rem;
   margin-bottom: 2rem;
-  transition: all 0.3s ease;
+  transition: background 0.2s ease-out, box-shadow 0.2s ease-out;
+  border-radius: var(--border-radius);
 }
 
 .leadership-card:hover {
-  box-shadow: 0 4px 8px var(--card-hover-shadow);
+  box-shadow: 0 2px 8px var(--card-hover-shadow);
   background: var(--hover-background);
-  transform: translateY(-2px);
 }
 
 .card-header {

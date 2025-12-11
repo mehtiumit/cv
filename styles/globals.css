@@ -17,40 +17,40 @@
   --color-gray-medium: #666666;
   --color-gray-light: #EEEEEE;
   
-  /* Light theme variables */
+  /* Light theme variables - Premium soft tones */
   --background: #ffffff;
-  --text: #000000;
-  --text-rgb: 0, 0, 0;
-  --card-background: #f8f9fa;
-  --card-border: #e9ecef;
-  --card-hover-shadow: rgba(0, 0, 0, 0.1);
-  --border-color: #EEEEEE;
-  --hover-background: #f1f3f4;
-  --section-border: #EEEEEE;
-  --tooltip-background: #000000;
+  --text: #171717;
+  --text-rgb: 23, 23, 23;
+  --card-background: #fafafa;
+  --card-border: #eaeaea;
+  --card-hover-shadow: rgba(0, 0, 0, 0.06);
+  --border-color: #eaeaea;
+  --hover-background: #f5f5f5;
+  --section-border: #eaeaea;
+  --tooltip-background: #171717;
   --tooltip-text: #ffffff;
-  --link-color: #333333;
+  --link-color: #444444;
   --link-hover-color: #000000;
-  --timeline-color: #EEEEEE;
-  --timeline-dot-color: #333333;
-  --menu-text-color: #666666;
-  --menu-hover-color: #000000;
-  --menu-dot-color: #666666;
-  --menu-dot-hover-color: #000000;
+  --timeline-color: #eaeaea;
+  --timeline-dot-color: #444444;
+  --menu-text-color: #888888;
+  --menu-hover-color: #171717;
+  --menu-dot-color: #888888;
+  --menu-dot-hover-color: #171717;
   
   /* Layout variables */
   --container-max-width: 1200px;
   --container-padding: 2rem;
   --grid-gap: 2rem;
-  --border-radius: 8px;
-  --border-radius-small: 4px;
-  --border-radius-large: 12px;
+  --border-radius: 6px;
+  --border-radius-small: 3px;
+  --border-radius-large: 8px;
   
-  /* Animation variables */
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
-  --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Animation variables - Smooth and subtle */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.2s ease-out;
+  --transition-slow: 0.4s ease-out;
+  --animation-bounce: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   
   /* Typography variables */
   --font-size-xs: 0.75rem;
@@ -73,32 +73,32 @@
 }
 
 [data-theme='dark'] {
-  /* Dark theme variables */
-  --background: #0d1117;
-  --text: #f0f6fc;
-  --text-rgb: 240, 246, 252;
-  --card-background: #161b22;
-  --card-border: #30363d;
-  --card-hover-shadow: rgba(255, 255, 255, 0.1);
-  --border-color: #30363d;
-  --hover-background: #21262d;
-  --section-border: #30363d;
-  --tooltip-background: #f0f6fc;
-  --tooltip-text: #0d1117;
-  --link-color: #f0f6fc;
+  /* Dark theme variables - Cursor style deep black */
+  --background: #000000;
+  --text: #ededed;
+  --text-rgb: 237, 237, 237;
+  --card-background: #0a0a0a;
+  --card-border: #1a1a1a;
+  --card-hover-shadow: rgba(255, 255, 255, 0.05);
+  --border-color: #1a1a1a;
+  --hover-background: #111111;
+  --section-border: #1a1a1a;
+  --tooltip-background: #ededed;
+  --tooltip-text: #000000;
+  --link-color: #ededed;
   --link-hover-color: #ffffff;
-  --timeline-color: #30363d;
-  --timeline-dot-color: #f0f6fc;
-  --menu-text-color: #8b949e;
-  --menu-hover-color: #f0f6fc;
-  --menu-dot-color: #8b949e;
-  --menu-dot-hover-color: #f0f6fc;
+  --timeline-color: #1a1a1a;
+  --timeline-dot-color: #ededed;
+  --menu-text-color: #666666;
+  --menu-hover-color: #ededed;
+  --menu-dot-color: #666666;
+  --menu-dot-hover-color: #ededed;
   
   /* Update existing color variables for dark theme */
-  --color-black: #f0f6fc;
-  --color-gray-dark: #f0f6fc;
-  --color-gray-medium: #8b949e;
-  --color-gray-light: #30363d;
+  --color-black: #ededed;
+  --color-gray-dark: #ededed;
+  --color-gray-medium: #666666;
+  --color-gray-light: #1a1a1a;
 }
 
 * {

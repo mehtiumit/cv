@@ -2,11 +2,12 @@
   border: 1px solid var(--card-border);
   background: var(--card-background);
   padding: 1.5rem;
-  transition: all 0.3s ease;
+  transition: background 0.2s ease-out, box-shadow 0.2s ease-out;
+  border-radius: var(--border-radius);
 }
 
 .skills-card:hover {
-  box-shadow: 0 4px 8px var(--card-hover-shadow);
+  box-shadow: 0 2px 8px var(--card-hover-shadow);
   background: var(--hover-background);
 }
 
@@ -32,13 +33,13 @@
   font-size: 0.875rem;
   color: var(--text);
   padding: 0.5rem;
-  border-radius: 4px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--border-radius-small);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .tech-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  opacity: 0.85;
 }
 
 .tech-tooltip {
@@ -49,13 +50,13 @@
   background-color: var(--tooltip-background);
   color: var(--tooltip-text);
   padding: 0.75rem 1rem;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   font-size: 0.75rem;
   white-space: nowrap;
   z-index: 10;
   opacity: 0;
-  box-shadow: 0 2px 4px var(--card-hover-shadow);
-  animation: fadeIn 0.2s ease forwards;
+  box-shadow: 0 2px 8px var(--card-hover-shadow);
+  animation: fadeIn 0.15s ease-out forwards;
 }
 
 .tech-tooltip::after {
@@ -126,18 +127,18 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, 4px);
   }
   to {
-    opacity: 0.9;
+    opacity: 1;
     transform: translate(-50%, 0);
   }
 }
 
 .tech-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease-out;
 }
 
 .tech-item:hover .tech-icon {
-  transform: scale(1.1);
+  transform: scale(1.05);
 } 
