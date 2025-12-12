@@ -27,7 +27,7 @@
     "projectsShowing": "proje gösteriliyor.",
     "allProjects": "Tüm projeler",
     "webProjects": "Web projeleri",
-    "androidProjects": "Android projeleri", 
+    "androidProjects": "Android projeleri",
     "iosProjects": "iOS projeleri",
     "platform": {
       "all": "Tümü",
@@ -234,12 +234,12 @@
         "startDate": "Nisan 2025",
         "endDate": "Günümüz",
         "bulletPoints": [
-          "Golang ve MSSQL kullanarak birden fazla finansal partner için para transfer sistemlerinin entegrasyonu ve bakımını destekledim.",
-          "Yurtiçi ve yurtdışı fon transferlerinden sorumlu ölçeklenebilir mikroservislerin geliştirilmesine katkıda bulundum.",
-          "Sorunsuz API iletişimi ve SLA uyumluluğunu sağlamak için harici partnerlerle işbirliği yaptım.",
-          "Kritik servislerin test ve dağıtım süreçlerini otomatikleştirmek için GitLab CI/CD pipeline'larını kullandım.",
-          "Keycloak kullanarak dahili API'ler ve paneller genelinde güvenli kimlik doğrulama ve rol tabanlı erişim kontrolü uyguladım.",
-          "Günlük stand-up'lara ve sprint planlamalarına katıldım, hızlı tempolu fintech ortamına hızla adapte oldum."
+          "Golang ve MSSQL temelli mimari ile on’dan fazla finansal iş ortağı için para transferi sistemlerinin entegrasyonunu yöneterek yüksek erişilebilirlik ve kesintisiz hizmet sağladım.",
+          "Yurtiçi ve yurtdışı fon transferleri için ölçeklenebilir mikroservis mimarisi geliştirerek işlem hacmi kapasitesini artırdım.",
+          "Harici iş ortaklarıyla uçtan uca API entegrasyonlarını yöneterek SLA standartlarına tam uyum sağladım.",
+          "Kritik servis dağıtımlarını GitLab CI/CD pipeline'ları ile otomatize ederek deployment süreçlerini hızlandırdım ve manuel hata oranını minimize ettim.",
+          "Keycloak ile merkezi kimlik doğrulama ve rol tabanlı erişim kontrolü (RBAC) altyapısını kurarak sistem güvenliğini maksimize ettim.",
+          "Agile metodolojileri kapsamında günlük sprint süreçlerine aktif katkı sağlayarak hızlı adaptasyon ve verimli teslimat gerçekleştirdim."
         ]
       },
       "hepsiburada": {
@@ -249,14 +249,14 @@
         "startDate": "Ağustos 2023",
         "endDate": "Nisan 2025",
         "bulletPoints": [
-          ".NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB ve Google BigQuery kullanarak temel reklam ürünlerini (Sponsored Products, Sponsored Brands, FacebookAds, HepsiAds Campaigns) geliştirdim.",
-          "Yüksek kaliteli yazılım sürümlerinin zamanında teslimini sağlamak için ürün yönetimi ve QA dahil olmak üzere çapraz fonksiyonel ekiplerle işbirliği yaptım.",
-          "Gelişmiş ölçeklenebilirlik ve güvenilirlik için Docker ve Kubernetes kullanarak mikroservis tabanlı uygulamalar geliştirdim ve sürdürdüm.",
-          "Veri analitiği ve raporlama için Google BigQuery kullandım, veri odaklı karar vermeyi mümkün kıldım.",
-          "Ürün arama sonuçlarını iyileştirmek ve Sponsored Products'ta ilgili ürün rotasyonunu çözmek için Elasticsearch arama motorunu yapılandırdım ve optimize ettim.",
-          "Gerçek zamanlı veri işleme ve entegrasyon için Kafka mesajlaşmasını uyguladım, sistem ölçeklenebilirliğini artırdım.",
-          "Elasticsearch'ten OpenSearch'e geçişi yönettim, arama yeteneklerini ve veri işlemeyi optimize ettim.",
-          "Finansal ve BT güvenlik standartlarına uyumu sağlayarak SOX uyumluluk önlemlerini uyguladım."
+          ".NET Core, Golang, Kafka, Redis, Elasticsearch ve Google BigQuery teknolojileriyle temel reklam ürünlerinin (Sponsored Products, Sponsored Brands, FacebookAds) geliştirme süreçlerine liderlik ettim.",
+          "Ürün yönetimi ve QA ekipleriyle koordineli çalışarak yüksek kaliteli yazılım sürümlerinin zamanında ve hatasız teslimatını garanti altına aldım.",
+          "Docker ve Kubernetes orkestrasyonu ile mikroservis tabanlı, yük altında otomatik ölçeklenebilen dayanıklı sistemler inşa ettim.",
+          "Google BigQuery üzerinde kurulan analitik raporlama altyapısı ile iş birimlerine veri odaklı stratejik karar alma yetkinliği kazandırdım.",
+          "Elasticsearch arama motoru optimizasyonu ile ürün arama sonuçlarında alaka düzeyini artırarak Sponsored Products dönüşüm oranlarını iyileştirdim.",
+          "Kafka tabanlı asenkron mesajlaşma mimarisi kurgulayarak gerçek zamanlı veri işleme kapasitesini ve sistem ölçeklenebilirliğini yükselttim.",
+          "Arama altyapısının Elasticsearch'ten OpenSearch'e migrasyonunu kesintisiz yöneterek sorgu performansını ve operasyonel verimliliği artırdım.",
+          "SOX uyumluluk standartlarını teknik süreçlere entegre ederek finansal ve BT güvenlik denetimlerinden başarıyla geçilmesini sağladım."
         ]
       },
       "getir": {
@@ -266,9 +266,9 @@
         "startDate": "Temmuz 2023",
         "endDate": "Ağustos 2023",
         "bulletPoints": [
-          "BiTaksi ekibi içinde Getir'de Back-End Geliştirici olarak Go, MongoDB, Redis ve birim testleri kullanarak uygulama performansını ve güvenilirliğini optimize ettim.",
-          "Backend geliştirmeyi frontend uygulama gereksinimleri ve kurumsal hedeflerle uyumlu hale getirmek için çapraz fonksiyonel ekiplerle işbirliği yaptım.",
-          "Daha sağlam ve ölçeklenebilir çözümlere yol açan backend sistemlerinde güncellemelere katkıda bulundum."
+          "BiTaksi ekibinde Go, MongoDB ve Redis teknolojilerini kullanarak backend performans optimizasyonlarını gerçekleştirdim.",
+          "Frontend gereksinimleri ve kurumsal hedefler doğrultusunda backend mimarisini şekillendirmek için çapraz fonksiyonel ekiplerle iş birliği yaptım.",
+          "Birim test kapsamını genişleterek kod kalitesini artırdım ve daha güvenilir backend sistemlerinin devreye alınmasını sağladım."
         ]
       },
       "hepsiburada-tesodev": {
@@ -278,11 +278,11 @@
         "startDate": "Ağustos 2021",
         "endDate": "Haziran 2023",
         "bulletPoints": [
-          "Hepsiburada HepsiAds ekibi için Back-End Geliştirici olarak çalıştım, Sponsored Products, Sponsored Brands, FacebookAds ve HepsiAds kampanyalarının geliştirilmesi ve optimizasyonuna odaklandım.",
-          ".NET Core, Golang, Kafka, Redis, Elasticsearch, MongoDB ve Google BigQuery dahil olmak üzere sonraki dahili rolümdeki aynı teknoloji yığınını kullandım.",
-          "Hepsiburada'daki dahili pozisyonumda detaylandırılan başarıları yansıtarak, reklam ürünlerindeki geliştirmeler yoluyla önemli gelir artışına katkıda bulundum.",
-          "Yüksek kaliteli yazılım sürümlerinin teslimini sağlamak için çapraz fonksiyonel ekiplerle yakın işbirliği yaptım, sonraki dahili sorumluluklarımla paralel olarak.",
-          "Dahili görev sürem boyunca benimsenen uygulamalarla tutarlı olarak mikroservis tabanlı uygulamaları sürdürdüm ve ölçeklendirdim."
+          "Hepsiburada HepsiAds ekibinde reklam kampanya yönetim sistemlerinin (Sponsored Products, FacebookAds) back-end geliştirmelerini yürüttüm.",
+          ".NET Core, Golang, Kafka ve NoSQL veritabanlarını içeren modern teknoloji yığınıyla yüksek trafikli mikroservisler geliştirdim.",
+          "Reklam ürünlerindeki sistemsel iyileştirmelerle gelir artışına doğrudan katkı sağlayan performans optimizasyonları gerçekleştirdim.",
+          "Agile prensipleriyle çalışan çapraz fonksiyonel ekiplerde aktif rol alarak yazılım yaşam döngüsünün her aşamasında kalite odaklı çıktılar ürettim.",
+          "Mikroservis mimarisinin sürdürülebilirliğini ve ölçeklenebilirliğini artıran best-practice uygulamalarını hayata geçirdim."
         ]
       }
     },
@@ -308,47 +308,75 @@
       "techStack": {
         "dotnet": {
           "name": ".NET Core",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "golang": {
           "name": "Golang",
-          "companies": ["Hepsiburada", "Getir"]
+          "companies": [
+            "Hepsiburada",
+            "Getir"
+          ]
         },
         "kafka": {
           "name": "Kafka",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "elasticsearch": {
           "name": "Elasticsearch",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "docker": {
           "name": "Docker",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "git": {
           "name": "Git",
-          "companies": ["Hepsiburada", "Getir"]
+          "companies": [
+            "Hepsiburada",
+            "Getir"
+          ]
         },
         "sql": {
           "name": "SQL",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "bigquery": {
           "name": "BigQuery",
-          "companies": ["Hepsiburada"]
+          "companies": [
+            "Hepsiburada"
+          ]
         },
         "redis": {
           "name": "Redis",
-          "companies": ["Hepsiburada", "Getir"]
+          "companies": [
+            "Hepsiburada",
+            "Getir"
+          ]
         },
         "mongodb": {
           "name": "MongoDB",
-          "companies": ["Hepsiburada", "Getir"]
+          "companies": [
+            "Hepsiburada",
+            "Getir"
+          ]
         },
         "prompt-engineering": {
           "name": "Prompt Engineering",
-          "companies": ["Kişisel Projeler", "Hepsiburada", "Getir"]
+          "companies": [
+            "Kişisel Projeler",
+            "Hepsiburada",
+            "Getir"
+          ]
         }
       },
       "languages": {

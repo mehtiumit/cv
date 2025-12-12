@@ -81,7 +81,7 @@
 .companies span {
   position: relative;
   font-size: 0.75rem;
-  color: white;
+  color: var(--tooltip-text);
   padding-left: 12px;
 }
 
@@ -93,7 +93,7 @@
   transform: translateY(-50%);
   width: 3px;
   height: 3px;
-  background-color: white;
+  background-color: var(--tooltip-text);
   border-radius: 50%;
   opacity: 0.7;
 }
