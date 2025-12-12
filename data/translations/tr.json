@@ -235,10 +235,10 @@
         "endDate": "Günümüz",
         "bulletPoints": [
           "Golang ve MSSQL temelli mimari ile on’dan fazla finansal iş ortağı için para transferi sistemlerinin entegrasyonunu yöneterek yüksek erişilebilirlik ve kesintisiz hizmet sağladım.",
-          "Yurtiçi ve yurtdışı fon transferleri için ölçeklenebilir mikroservis mimarisi geliştirerek işlem hacmi kapasitesini artırdım.",
+          "Yurtiçi ve yurtdışı fon transferleri için ölçeklenebilir mikroservis mimarisinde geliştirmeler yaptım.",
           "Harici iş ortaklarıyla uçtan uca API entegrasyonlarını yöneterek SLA standartlarına tam uyum sağladım.",
-          "Kritik servis dağıtımlarını GitLab CI/CD pipeline'ları ile otomatize ederek deployment süreçlerini hızlandırdım ve manuel hata oranını minimize ettim.",
-          "Keycloak ile merkezi kimlik doğrulama ve rol tabanlı erişim kontrolü (RBAC) altyapısını kurarak sistem güvenliğini maksimize ettim.",
+          "Kritik servis dağıtımlarını GitLab CI/CD pipeline'ları ile otomatize ederek deployment süreçlerinde yer aldım.",
+          "Keycloak ile merkezi kimlik doğrulama ve rol tabanlı erişim kontrolü (RBAC) altyapısını kullanarak sistem güvenliğini maksimize ettim.",
           "Agile metodolojileri kapsamında günlük sprint süreçlerine aktif katkı sağlayarak hızlı adaptasyon ve verimli teslimat gerçekleştirdim."
         ]
       },
@@ -249,10 +249,10 @@
         "startDate": "Ağustos 2023",
         "endDate": "Nisan 2025",
         "bulletPoints": [
-          ".NET Core, Golang, Kafka, Redis, Elasticsearch ve Google BigQuery teknolojileriyle temel reklam ürünlerinin (Sponsored Products, Sponsored Brands, FacebookAds) geliştirme süreçlerine liderlik ettim.",
+          ".NET Core, Golang, Kafka, Redis, Elasticsearch ve Google BigQuery teknolojileriyle temel reklam ürünlerinin (Sponsored Products, Sponsored Brands, FacebookAds) geliştirme süreçlerinde geliştirme yaptım.",
           "Ürün yönetimi ve QA ekipleriyle koordineli çalışarak yüksek kaliteli yazılım sürümlerinin zamanında ve hatasız teslimatını garanti altına aldım.",
-          "Docker ve Kubernetes orkestrasyonu ile mikroservis tabanlı, yük altında otomatik ölçeklenebilen dayanıklı sistemler inşa ettim.",
-          "Google BigQuery üzerinde kurulan analitik raporlama altyapısı ile iş birimlerine veri odaklı stratejik karar alma yetkinliği kazandırdım.",
+          "Docker ve Kubernetes orkestrasyonu ile mikroservis tabanlı geliştirme süreçlerinde geliştirme yaptım.",
+          "Google BigQuery üzerinde kurulan analitik raporlama altyapısı ile iş birimlerine veri odaklı stratejik karar alma süreçlerinde yer aldım.",
           "Elasticsearch arama motoru optimizasyonu ile ürün arama sonuçlarında alaka düzeyini artırarak Sponsored Products dönüşüm oranlarını iyileştirdim.",
           "Kafka tabanlı asenkron mesajlaşma mimarisi kurgulayarak gerçek zamanlı veri işleme kapasitesini ve sistem ölçeklenebilirliğini yükselttim.",
           "Arama altyapısının Elasticsearch'ten OpenSearch'e migrasyonunu kesintisiz yöneterek sorgu performansını ve operasyonel verimliliği artırdım.",
@@ -267,7 +267,6 @@
         "endDate": "Ağustos 2023",
         "bulletPoints": [
           "BiTaksi ekibinde Go, MongoDB ve Redis teknolojilerini kullanarak backend performans optimizasyonlarını gerçekleştirdim.",
-          "Frontend gereksinimleri ve kurumsal hedefler doğrultusunda backend mimarisini şekillendirmek için çapraz fonksiyonel ekiplerle iş birliği yaptım.",
           "Birim test kapsamını genişleterek kod kalitesini artırdım ve daha güvenilir backend sistemlerinin devreye alınmasını sağladım."
         ]
       },
@@ -278,7 +277,7 @@
         "startDate": "Ağustos 2021",
         "endDate": "Haziran 2023",
         "bulletPoints": [
-          "Hepsiburada HepsiAds ekibinde reklam kampanya yönetim sistemlerinin (Sponsored Products, FacebookAds) back-end geliştirmelerini yürüttüm.",
+          "Hepsiburada HepsiAds ekibinde reklam kampanya yönetim sistemlerinin (Sponsored Products, FacebookAds) back-end geliştirmelerinde yer aldım.",
           ".NET Core, Golang, Kafka ve NoSQL veritabanlarını içeren modern teknoloji yığınıyla yüksek trafikli mikroservisler geliştirdim.",
           "Reklam ürünlerindeki sistemsel iyileştirmelerle gelir artışına doğrudan katkı sağlayan performans optimizasyonları gerçekleştirdim.",
           "Agile prensipleriyle çalışan çapraz fonksiyonel ekiplerde aktif rol alarak yazılım yaşam döngüsünün her aşamasında kalite odaklı çıktılar ürettim.",
