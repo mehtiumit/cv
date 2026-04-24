@@ -8,11 +8,12 @@
 .filterButtons {
   display: flex;
   gap: 0.375rem;
-  background-color: var(--card-background);
+  background-color: var(--control-background);
   border: 1px solid var(--card-border);
-  border-radius: var(--border-radius-large);
+  border-radius: var(--border-radius);
   padding: 0.375rem;
-  transition: box-shadow 0.2s ease-out;
+  transition: border-color 0.2s ease-out;
+  backdrop-filter: blur(18px);
 }
 
 [data-theme='dark'] .filterButtons {
@@ -24,7 +25,7 @@
   background: none;
   border: none;
   padding: 0.625rem 1.25rem;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-small);
   font-family: var(--font-inter, 'Inter', system-ui, sans-serif);
   font-size: 0.8rem;
   font-weight: 500;
@@ -39,13 +40,13 @@
 }
 
 .filterButton:hover {
-  color: var(--menu-hover-color);
-  background-color: var(--hover-background);
+  color: var(--accent);
+  background-color: var(--accent-soft);
 }
 
 .filterButton:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--card-border);
+  box-shadow: 0 0 0 2px var(--accent);
 }
 
 .filterButton.active {

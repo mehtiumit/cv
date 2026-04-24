@@ -2,21 +2,24 @@
   border: 1px solid var(--card-border);
   background: var(--card-background);
   padding: 1.5rem;
-  margin-bottom: 2rem;
-  transition: background 0.2s ease-out, box-shadow 0.2s ease-out;
+  margin-bottom: 1rem;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out, transform 0.2s ease-out;
   border-radius: var(--border-radius);
+  backdrop-filter: blur(14px);
 }
 
 .education-card:hover {
-  box-shadow: 0 2px 8px var(--card-hover-shadow);
+  border-color: rgba(var(--text-rgb), 0.2);
   background: var(--hover-background);
+  transform: translateY(-1px);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.875rem;
 }
 
 .school-info {
@@ -28,7 +31,7 @@
 .icon {
   width: 20px;
   height: 20px;
-  color: var(--menu-text-color);
+  color: var(--accent);
 }
 
 .school {
@@ -41,22 +44,40 @@
 }
 
 .location {
-  color: var(--menu-text-color);
+  color: var(--text-soft);
 }
 
 .period {
-  color: var(--menu-text-color);
-  font-size: 0.875rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  white-space: nowrap;
 }
 
 .degree {
   font-size: 1rem;
   color: var(--text);
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .description {
   font-size: 0.875rem;
-  color: var(--menu-text-color);
-  line-height: 1.6;
-} 
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .education-card {
+    padding: 1.25rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .school-info {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

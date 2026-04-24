@@ -1,49 +1,47 @@
-/* Font loading optimization */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-}
-
 :root {
   /* Font variables */
   --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   
   /* Base colors */
-  --color-black: #000000;
-  --color-gray-dark: #333333;
-  --color-gray-medium: #666666;
-  --color-gray-light: #EEEEEE;
+  --color-black: #10110f;
+  --color-gray-dark: #2d2f2c;
+  --color-gray-medium: #72766f;
+  --color-gray-light: #eceee8;
   
-  /* Light theme variables - Premium soft tones */
-  --background: #ffffff;
-  --text: #171717;
-  --text-rgb: 23, 23, 23;
-  --card-background: #fafafa;
-  --card-border: #eaeaea;
-  --card-hover-shadow: rgba(0, 0, 0, 0.06);
-  --border-color: #eaeaea;
-  --hover-background: #f5f5f5;
-  --section-border: #eaeaea;
-  --tooltip-background: #171717;
-  --tooltip-text: #ffffff;
-  --link-color: #444444;
-  --link-hover-color: #000000;
-  --timeline-color: #eaeaea;
-  --timeline-dot-color: #444444;
-  --menu-text-color: #888888;
-  --menu-hover-color: #171717;
-  --menu-dot-color: #888888;
-  --menu-dot-hover-color: #171717;
+  /* Light theme variables */
+  --background: #f7f7f4;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --text: #11120f;
+  --text-rgb: 17, 18, 15;
+  --text-soft: #4e534c;
+  --muted: #767b73;
+  --accent: #0f8f70;
+  --accent-soft: rgba(15, 143, 112, 0.1);
+  --card-background: rgba(255, 255, 255, 0.84);
+  --card-border: rgba(17, 18, 15, 0.1);
+  --card-hover-shadow: rgba(17, 18, 15, 0.08);
+  --border-color: rgba(17, 18, 15, 0.12);
+  --hover-background: rgba(255, 255, 255, 0.96);
+  --section-border: rgba(17, 18, 15, 0.12);
+  --tooltip-background: #11120f;
+  --tooltip-text: #f7f7f4;
+  --link-color: #343832;
+  --link-hover-color: #0f8f70;
+  --timeline-color: rgba(17, 18, 15, 0.12);
+  --timeline-dot-color: #0f8f70;
+  --menu-text-color: #767b73;
+  --menu-hover-color: #11120f;
+  --menu-dot-color: #a8ada4;
+  --menu-dot-hover-color: #0f8f70;
+  --control-background: rgba(255, 255, 255, 0.76);
   
   /* Layout variables */
   --container-max-width: 1200px;
   --container-padding: 2rem;
   --grid-gap: 2rem;
-  --border-radius: 6px;
-  --border-radius-small: 3px;
+  --border-radius: 8px;
+  --border-radius-small: 4px;
   --border-radius-large: 8px;
   
   /* Animation variables - Smooth and subtle */
@@ -73,32 +71,38 @@
 }
 
 [data-theme='dark'] {
-  /* Dark theme variables - Cursor style deep black */
-  --background: #000000;
-  --text: #ededed;
-  --text-rgb: 237, 237, 237;
-  --card-background: #0a0a0a;
-  --card-border: #1a1a1a;
-  --card-hover-shadow: rgba(255, 255, 255, 0.05);
-  --border-color: #1a1a1a;
-  --hover-background: #111111;
-  --section-border: #1a1a1a;
-  --tooltip-background: #ededed;
-  --tooltip-text: #000000;
-  --link-color: #ededed;
+  --background: #0d0e0c;
+  --surface: #141512;
+  --surface-elevated: #191a17;
+  --text: #f4f4ef;
+  --text-rgb: 244, 244, 239;
+  --text-soft: #c3c8bf;
+  --muted: #8d9389;
+  --accent: #20b894;
+  --accent-soft: rgba(32, 184, 148, 0.14);
+  --card-background: rgba(24, 25, 22, 0.78);
+  --card-border: rgba(244, 244, 239, 0.12);
+  --card-hover-shadow: rgba(0, 0, 0, 0.38);
+  --border-color: rgba(244, 244, 239, 0.12);
+  --hover-background: rgba(30, 32, 28, 0.92);
+  --section-border: rgba(244, 244, 239, 0.12);
+  --tooltip-background: #f4f4ef;
+  --tooltip-text: #0d0e0c;
+  --link-color: #d9ddd5;
   --link-hover-color: #ffffff;
-  --timeline-color: #1a1a1a;
-  --timeline-dot-color: #ededed;
-  --menu-text-color: #666666;
-  --menu-hover-color: #ededed;
-  --menu-dot-color: #666666;
-  --menu-dot-hover-color: #ededed;
+  --timeline-color: rgba(244, 244, 239, 0.12);
+  --timeline-dot-color: #20b894;
+  --menu-text-color: #8d9389;
+  --menu-hover-color: #f4f4ef;
+  --menu-dot-color: #5f665c;
+  --menu-dot-hover-color: #20b894;
+  --control-background: rgba(24, 25, 22, 0.72);
   
   /* Update existing color variables for dark theme */
-  --color-black: #ededed;
-  --color-gray-dark: #ededed;
-  --color-gray-medium: #666666;
-  --color-gray-light: #1a1a1a;
+  --color-black: #f4f4ef;
+  --color-gray-dark: #d9ddd5;
+  --color-gray-medium: #8d9389;
+  --color-gray-light: #242621;
 }
 
 * {
@@ -174,6 +178,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
   /* Cross-browser text rendering */
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -184,6 +190,19 @@ body {
   scroll-behavior: smooth;
   /* Font loading optimization */
   font-display: swap;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to right, rgba(var(--text-rgb), 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--text-rgb), 0.026) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent 72%);
+  z-index: -1;
 }
 
 .container {
@@ -199,7 +218,7 @@ body {
 
 .main-container {
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -220,8 +239,8 @@ body {
 
 /* Focus management: show outlines only for keyboard focus */
 *:focus-visible {
-  outline: 2px solid var(--text);
-  outline-offset: 2px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 /* Skip link for keyboard navigation */

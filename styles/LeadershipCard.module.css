@@ -2,21 +2,24 @@
   border: 1px solid var(--card-border);
   background: var(--card-background);
   padding: 1.5rem;
-  margin-bottom: 2rem;
-  transition: background 0.2s ease-out, box-shadow 0.2s ease-out;
+  margin-bottom: 1rem;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out, transform 0.2s ease-out;
   border-radius: var(--border-radius);
+  backdrop-filter: blur(14px);
 }
 
 .leadership-card:hover {
-  box-shadow: 0 2px 8px var(--card-hover-shadow);
+  border-color: rgba(var(--text-rgb), 0.2);
   background: var(--hover-background);
+  transform: translateY(-1px);
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.875rem;
 }
 
 .org-info {
@@ -35,18 +38,20 @@
 }
 
 .location {
-  color: var(--menu-text-color);
+  color: var(--text-soft);
 }
 
 .period {
-  color: var(--menu-text-color);
-  font-size: 0.875rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  white-space: nowrap;
 }
 
 .role {
   font-size: 1rem;
   color: var(--text);
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .bullet-list {
@@ -60,8 +65,8 @@
   padding-left: 1.25rem;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--text);
+  line-height: 1.65;
+  color: var(--text-soft);
 }
 
 .bullet-list li:before {
@@ -71,7 +76,7 @@
   top: 0.6rem;
   width: 4px;
   height: 4px;
-  background-color: var(--menu-text-color);
+  background-color: var(--accent);
   border-radius: 50%;
 }
 
@@ -81,4 +86,20 @@
 
 .leadership-card:last-child {
   margin-bottom: 0;
-} 
+}
+
+@media (max-width: 640px) {
+  .leadership-card {
+    padding: 1.25rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .org-info {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}

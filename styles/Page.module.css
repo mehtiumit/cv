@@ -1,109 +1,171 @@
 .container {
   position: relative;
-  width: 80%;
+  width: min(100%, var(--container-max-width));
   max-width: 1200px;
   min-width: 320px;
   margin: 0 auto;
-  padding: 3rem 4rem;
+  padding: 6rem 4rem 5rem;
 }
 
 .header {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 5rem;
+  padding: 5rem 0 2.5rem;
   border-bottom: 1px solid var(--section-border);
 }
 
 .titleLine {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--section-border);
-  text-align: center;
-  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+  text-align: left;
+  align-items: flex-start;
 }
 
 .contactInfo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.625rem;
   font-size: 0.875rem;
   color: var(--link-color);
-  justify-content: center;
+  justify-content: end;
+  justify-self: end;
+  width: min(100%, 360px);
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
+  gap: 0.625rem;
+  justify-content: flex-start;
+  min-height: 34px;
+  color: var(--text-soft);
+}
+
+.contactItem :global(.icon) {
+  flex: 0 0 auto;
+  color: var(--muted);
 }
 
 .contactItem a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 0.2s ease-out;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease-out, text-decoration-color 0.2s ease-out;
 }
 
 .contactItem a:hover {
   color: var(--link-hover-color);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
 .section {
-  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 4.5rem;
+}
+
+.section > :not(.sectionTitle) {
+  grid-column: 2;
 }
 
 .sectionTitle {
-  font-size: 1.375rem;
-  font-weight: 500;
+  position: sticky;
+  top: 2rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
   color: var(--text);
-  margin-bottom: 2rem;
-  text-align: center;
-  position: relative;
-  padding-bottom: 1rem;
-  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  text-align: left;
+  padding: 0.35rem 0 0 1rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .sectionTitle::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 1px;
-  background-color: var(--section-border);
+  top: 0;
+  bottom: auto;
+  left: 0;
+  transform: none;
+  width: 2px;
+  height: 28px;
+  background-color: var(--accent);
+  border-radius: 999px;
 }
 
 @media (max-width: 1400px) {
   .container {
-    width: 85%;
+    width: min(100%, 1120px);
   }
 }
 
 @media (max-width: 1200px) {
   .container {
-    width: 90%;
-    padding: 3rem;
+    width: 100%;
+    padding: 5rem 3rem 4rem;
+  }
+
+  .section {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 2.25rem;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 95%;
-    padding: 2rem;
+    width: 100%;
+    padding: 5.5rem 1.5rem 3rem;
   }
+
+  .header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 3.5rem;
+    padding: 3.5rem 0 2rem;
+  }
+
+  .titleLine {
+    text-align: left;
+    align-items: flex-start;
+  }
+
   .contactInfo {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    justify-self: stretch;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .section {
+    display: block;
+    margin-bottom: 3.5rem;
+  }
+
+  .section > :not(.sectionTitle) {
+    grid-column: auto;
+  }
+
+  .sectionTitle {
+    position: relative;
+    top: auto;
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     width: 100%;
-    padding: 1.5rem;
+    padding: 5rem 1rem 2.5rem;
   }
 } 
